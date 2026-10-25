@@ -1,0 +1,6 @@
+SITE ACTUALIZAT — fără articole demonstrative.
+
+Încarcă în rădăcina repository-ului GitHub index.html și folderul assets din această arhivă.
+IMPORTANT: șterge separat din GitHub cele trei fișiere vechi din folderul articles (adhd-hiperfocus.html, evaluarea-dezvoltarii.html, zahar-si-adhd.html). GitHub Upload files nu șterge fișierele care lipsesc din arhivă.
+
+Pentru editarea viitoare prin formular vom configura ulterior Pages CMS; această arhivă NU activează încă editorul.

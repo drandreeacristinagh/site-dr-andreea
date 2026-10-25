@@ -10,3 +10,5 @@
 .about-photo-wrap{margin-top:32px;max-width:350px;overflow:hidden;border-radius:5px}
 .about-photo-wrap img{display:block;width:100%;height:auto}
 @media(max-width:800px){.hero-photo-wrap{height:390px;max-width:450px;width:100%;margin:auto}.about-photo-wrap{max-width:300px}}
+
+.articles-coming-soon { padding: 36px 0 50px; font-size: clamp(1.15rem, 2.2vw, 1.5rem); }

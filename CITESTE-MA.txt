@@ -1,0 +1,7 @@
+EDITOR PAGES CMS
+
+Încarcă fișierele și folderele din acest ZIP în rădăcina repository-ului GitHub, păstrând folderele assets și data. Fișierul .pages.yml este ascuns în unele sisteme Windows; trebuie încărcat și el. Alternativ, copiază conținutul lui în caseta Configuration din Pages CMS și salvează.
+
+După publicare, intră în Pages CMS > Textele și fotografiile site-ului. Modificările se salvează în data/site.json și sunt preluate de site automat.
+
+Articolele noi NU sunt încă configurate pentru publicare automată; acesta este doar editorul paginii existente.

@@ -34,15 +34,30 @@ filters.forEach(btn => btn.addEventListener('click', () => {
   updateArticles();
 }));
 search?.addEventListener('input', updateArticles);
-// CONTACT SETUP: replace these example values before publishing.
-const CONTACT_EMAIL = 'adresa-ta@example.com';
-const WHATSAPP_NUMBER = ''; // international format, digits only, e.g. 407xxxxxxxx
-const INSTAGRAM_URL = 'https://www.instagram.com/dr.andreeacristinagh/';
-const emailLink = document.getElementById('emailLink');
-emailLink.href = 'mailto:' + CONTACT_EMAIL;
-emailLink.textContent = CONTACT_EMAIL;
-const wa = document.getElementById('whatsappLink');
-if (WHATSAPP_NUMBER) { wa.href = 'https://wa.me/' + WHATSAPP_NUMBER; wa.textContent = 'Scrie-mi pe WhatsApp'; }
-else { wa.href = '#contact'; wa.addEventListener('click', e => { e.preventDefault(); alert('Adaugă numărul WhatsApp în assets/script.js înainte de publicare.'); }); }
-const insta = document.getElementById('instagramLink');
-insta.href = INSTAGRAM_URL; insta.target = '_blank'; insta.rel = 'noopener noreferrer';
+// Conținut editabil prin Pages CMS, păstrat în data/site.json.
+fetch('data/site.json', {cache: 'no-store'}).then(r => { if (!r.ok) throw Error('Nu se poate citi site.json'); return r.json(); }).then(data => {
+  document.querySelectorAll('[data-cms]').forEach(el => {
+    const key = el.dataset.cms;
+    if (typeof data[key] !== 'string') return;
+    // Păstrează formatarea inițială dacă textul nu a fost schimbat.
+    if (el.textContent.replace(/\s+/g, ' ').trim() !== data[key].replace(/\s+/g, ' ').trim()) {
+      el.textContent = data[key];
+    }
+  });
+  document.querySelectorAll('[data-cms-image]').forEach(img => {
+    const value = data[img.dataset.cmsImage];
+    if (typeof value === 'string' && value.startsWith('/assets/')) img.src = value;
+  });
+  const email = document.getElementById('emailLink');
+  if (email && data.contact_email) { email.textContent = data.contact_email; email.href = 'mailto:' + data.contact_email; }
+  const wa = document.getElementById('whatsappLink');
+  if (wa) {
+    const digits = String(data.contact_whatsapp || '').replace(/[^0-9]/g, '');
+    if (digits) { wa.textContent = 'Scrie-mi pe WhatsApp'; wa.href = 'https://wa.me/' + digits; }
+    else { wa.textContent = 'WhatsApp indisponibil momentan'; wa.removeAttribute('href'); }
+  }
+  const insta = document.getElementById('instagramLink');
+  if (insta && /^https:\/\/www\.instagram\.com\//.test(data.contact_instagram || '')) {
+    insta.href = data.contact_instagram; insta.target = '_blank'; insta.rel = 'noopener noreferrer';
+  }
+}).catch(err => console.error('Conținutul site-ului nu s-a încărcat:', err));
