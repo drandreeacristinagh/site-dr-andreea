@@ -1,0 +1,9 @@
+VERSIUNE NOUA CU EDITOR COMPLET
+
+1. În GitHub > site-dr-andreea > Add file > Upload files: încarcă toate fișierele și folderele DIN ACEST FOLDER, inclusiv .pages.yml, data, assets, index.html.
+2. Atenție: GitHub în browser poate omite fișierele ascunse (cu punct). Verifică explicit .pages.yml după încărcare; dacă nu s-a actualizat, deschide .pages.yml și înlocuiește conținutul cu cel din acest folder.
+3. Așteaptă deploy Cloudflare Pages, apoi reîncarcă site-ul cu Ctrl+F5.
+4. Pages CMS > repository > Editează întregul site: schimbă texte, imagini, liste.
+5. Articolele și resursele sunt în liste în același formular; bifează Publicat pentru afișare.
+6. E-mailul de contact este intenționat necompletat, ca să nu fie afișată o adresă fictivă.
+7. Pentru articole lungi, câmpul conținut este text simplu, nu editor rich-text.
