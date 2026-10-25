@@ -8,7 +8,7 @@ content:
     path: data/site.json
     format: json
     fields:
-        - name: brand_name
+      - name: brand_name
         label: "Antet – nume"
         type: string
       - name: brand_subtitle
