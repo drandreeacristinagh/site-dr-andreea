@@ -1,83 +1,26 @@
 {
-  "brand_name": "Dr. Andreea-Cristina Gheorghe",
-  "brand_subtitle": "Medicină · educație · sănătate",
-  "brand_initials": "AC",
   "hero_eyebrow": "Un spațiu de informare bazat pe dovezi",
   "hero_title": "Înțelegem mai bine. Avem grijă mai bine.",
   "hero_description": "Informații clare despre sănătatea mintală, dezvoltarea copilului și relația cu alimentația — cu nuanță, curiozitate și respect pentru fiecare persoană.",
   "hero_note": "Educație pentru sănătate, fără promisiuni miraculoase.",
-  "hero_image": "/assets/fotografie-principala.jpg",
   "intro": "Un loc pentru informații responsabile , explicații pe înțeles și resurse care susțin conversațiile cu specialiștii.",
   "about_eyebrow": "Bun venit",
   "about_title": "Medicina începe cu înțelegerea.",
   "about_intro": "Sunt Dr. Andreea-Cristina Gheorghe, medic rezident în psihiatrie pediatrică. Am creat acest spațiu pentru a aduce mai aproape informațiile medicale relevante și pentru a face loc unor discuții echilibrate despre sănătate.",
   "about_description": "Îmi doresc ca materialele publicate aici să fie accesibile, să distingă între dovezi și mituri și să încurajeze decizii informate, luate împreună cu profesioniștii potriviți.",
   "about_signature": "Cu grijă și curiozitate ✳",
-  "about_image": "/assets/fotografie-despre-mine.jpg",
-  "professional_title": "Parcurs profesional",
-  "professional_intro": "Studii, experiență și formări profesionale.",
-  "professional_entries": [],
   "focus_title": "Domenii de interes",
-  "focus_intro": "",
-  "focus_items": [],
-  "offer_title": "Ce ofer",
-  "offer_intro": "Activități educaționale în limitele formării și ale statutului profesional actual.",
-  "nutrition_title": "O abordare a nutriției care ține cont de întreaga persoană.",
-  "nutrition_intro": "Ofer ședințe individuale de educație nutrițională, adaptate obiectivelor, particularităților și contextului fiecărei persoane. Abordarea mea integrează principiile nutriției bazate pe dovezi, înțelegerea comportamentului alimentar și relația dintre alimentație, sănătatea mintală și starea de bine.",
-  "nutrition_areas": [
-    {
-      "title": "Managementul greutății corporale",
-      "description": "Scădere sau creștere ponderală, prin strategii sustenabile și adaptate individual."
-    },
-    {
-      "title": "Tulburări endocrine și metabolice",
-      "description": "Educație nutrițională în contexte precum rezistența la insulină, tiroidita Hashimoto și sindromul ovarelor polichistice (SOPC)."
-    },
-    {
-      "title": "Nutriție și sănătate mintală",
-      "description": "Sprijin pentru organizarea alimentației în contextul particularităților de neurodezvoltare, al tulburărilor afective și al dificultăților asociate."
-    },
-    {
-      "title": "Selectivitate și evitare alimentară",
-      "description": "Dificultăți legate de varietatea alimentară, sensibilități senzoriale și comportamente de evitare, inclusiv în contextul ARFID."
-    },
-    {
-      "title": "Relația cu alimentația, corpul și emoțiile",
-      "description": "Sprijin pentru dezvoltarea unei relații mai flexibile cu mâncarea, reducerea rigidității alimentare și înțelegerea influenței emoțiilor asupra comportamentului alimentar."
-    },
-    {
-      "title": "Tulburări de comportament alimentar",
-      "description": "Psihoeducație nutrițională și sprijin educațional complementar, în colaborare cu profesioniștii implicați în evaluare și tratament."
-    }
-  ],
-  "nutrition_disclaimer": "Ședințele au caracter educațional și nu înlocuiesc evaluarea medicală, tratamentul sau terapia nutrițională specializată atunci când acestea sunt indicate.",
-  "nutrition_cta": "Solicită informații",
-  "nutrition_cta_note": "Detalii despre ședințe, disponibilitate și tarife, la cerere.",
-  "psycho_title": "Înțelegerea sănătății mintale începe cu informația potrivită.",
-  "psycho_intro": "În calitate de medic rezident în psihiatrie pediatrică, îmi propun să fac informațiile despre sănătatea mintală și dezvoltarea copilului și adolescentului mai accesibile, printr-o abordare bazată pe dovezi științifice, empatie și respect pentru particularitățile individuale.",
-  "psycho_description": "Activitățile de psihoeducație urmăresc înțelegerea dificultăților emoționale, comportamentale și de neurodezvoltare, combaterea miturilor și sprijinirea persoanelor și familiilor în luarea unor decizii informate.",
-  "psycho_topics": [
-    "Neurodezvoltare",
-    "ADHD",
-    "Autism",
-    "Reglare emoțională",
-    "Tulburări afective și anxioase",
-    "Comportament și relații familiale",
-    "Sănătate mintală la copii și adolescenți"
-  ],
-  "psycho_disclaimer": "Activitățile au caracter educațional și nu constituie consultații psihiatrice, evaluare diagnostică sau tratament.",
   "articles_title": "Articole",
   "articles_empty": "Articolele vor fi disponibile în curând.",
-  "articles": [],
   "resources_title": "Resurse",
   "resources_empty": "Resursele vor fi disponibile în curând.",
-  "resources": [],
-  "extra_sections": [],
   "contact_eyebrow": "Să păstrăm legătura",
   "contact_title": "Ai o întrebare despre site?",
-  "contact_description": "Pentru informații despre activitățile educaționale și colaborări, mă poți contacta folosind datele de mai jos.",
+  "contact_description": "Pentru informații despre programări, mă poți contacta folosind datele din dreapta.",
   "disclaimer": "Acest site are scop informativ și educațional. Conținutul său nu înlocuiește evaluarea medicală, diagnosticul sau recomandările individualizate ale unui profesionist.",
-  "contact_email": "",
-  "contact_whatsapp": "",
+  "hero_image": "/assets/fotografie-principala.jpg",
+  "about_image": "/assets/fotografie-despre-mine.jpg",
+  "contact_email": "dr.andreeacristinagh@gmail.com",
+  "contact_whatsapp": "+40742195274",
   "contact_instagram": "https://www.instagram.com/dr.andreeacristinagh/"
 }
