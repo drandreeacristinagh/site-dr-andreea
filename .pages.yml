@@ -8,6 +8,12 @@ content:
     path: data/site.json
     format: json
     fields:
+        - name: brand_name
+        label: "Antet – nume"
+        type: string
+      - name: brand_subtitle
+        label: "Antet – subtitlu"
+        type: string
       - name: hero_eyebrow
         label: "Prima pagină – supratitlu"
         type: string
