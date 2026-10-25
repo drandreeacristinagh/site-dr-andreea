@@ -1,0 +1,115 @@
+media:
+  input: assets
+  output: /assets
+content:
+  - name: site
+    label: Textele și fotografiile site-ului
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: hero_eyebrow
+        label: "Prima pagină – supratitlu"
+        type: string
+      - name: hero_title
+        label: "Prima pagină – titlu"
+        type: string
+      - name: hero_description
+        label: "Prima pagină – descriere"
+        type: text
+      - name: hero_note
+        label: "Prima pagină – nota"
+        type: string
+      - name: intro
+        label: "Banda de introducere"
+        type: text
+      - name: about_eyebrow
+        label: "Despre mine – supratitlu"
+        type: string
+      - name: about_title
+        label: "Despre mine – titlu"
+        type: string
+      - name: about_intro
+        label: "Despre mine – prezentare"
+        type: text
+      - name: about_description
+        label: "Despre mine – continuare"
+        type: text
+      - name: about_signature
+        label: "Despre mine – semnătură"
+        type: string
+      - name: focus_eyebrow
+        label: "Domenii – supratitlu"
+        type: string
+      - name: focus_title
+        label: "Domenii – titlu"
+        type: string
+      - name: focus_description
+        label: "Domenii – introducere"
+        type: text
+      - name: articles_eyebrow
+        label: "Articole – supratitlu"
+        type: string
+      - name: articles_title
+        label: "Articole – titlu"
+        type: string
+      - name: articles_description
+        label: "Articole – descriere"
+        type: string
+      - name: articles_empty
+        label: "Articole – mesaj temporar"
+        type: string
+      - name: resources_eyebrow
+        label: "Resurse – supratitlu"
+        type: string
+      - name: resources_title
+        label: "Resurse – titlu"
+        type: string
+      - name: resources_empty
+        label: "Resurse – mesaj temporar"
+        type: string
+      - name: contact_eyebrow
+        label: "Contact – supratitlu"
+        type: string
+      - name: contact_title
+        label: "Contact – titlu"
+        type: string
+      - name: contact_description
+        label: "Contact – descriere"
+        type: text
+      - name: disclaimer
+        label: "Contact – nota medicală"
+        type: text
+      - name: hero_image
+        label: "Prima pagină – fotografie"
+        type: image
+      - name: about_image
+        label: "Despre mine – fotografie"
+        type: image
+      - name: contact_email
+        label: "Contact – e-mail"
+        type: string
+      - name: contact_whatsapp
+        label: "Contact – WhatsApp (cifre cu prefix)"
+        type: string
+      - name: contact_instagram
+        label: "Contact – Instagram"
+        type: string
+      - name: topic_1_title
+        label: "Topic 1 title"
+        type: string
+      - name: topic_1_description
+        label: "Topic 1 description"
+        type: text
+      - name: topic_2_title
+        label: "Topic 2 title"
+        type: string
+      - name: topic_2_description
+        label: "Topic 2 description"
+        type: text
+      - name: topic_3_title
+        label: "Topic 3 title"
+        type: string
+      - name: topic_3_description
+        label: "Topic 3 description"
+        type: text
