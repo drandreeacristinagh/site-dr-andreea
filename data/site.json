@@ -90,7 +90,7 @@
     },
     {
       "title": "Tulburări endocrine și metabolice",
-      "description": "Educație nutrițională în contexte precum rezistența la insulină, tiroidita Hashimoto și sindromul ovarelor polichistice (SOPC)."
+      "description": "Educație nutrițională în contexte precum rezistența la insulină, tiroidita Hashimoto și sindromul ovarelor polichistice/sindromul ovarian metabolic endocrin (PCOS/PMOS)."
     },
     {
       "title": "Nutriție și sănătate mintală",
@@ -98,7 +98,7 @@
     },
     {
       "title": "Selectivitate și evitare alimentară",
-      "description": "Dificultăți legate de varietatea alimentară, sensibilități senzoriale și comportamente de evitare, inclusiv în contextul ARFID."
+      "description": "Dificultăți legate de varietatea alimentară, sensibilități senzoriale și comportamente de evitare."
     },
     {
       "title": "Relația cu alimentația, corpul și emoțiile",
@@ -106,10 +106,10 @@
     },
     {
       "title": "Tulburări de comportament alimentar",
-      "description": "Psihoeducație nutrițională și sprijin educațional complementar, în colaborare cu profesioniștii implicați în evaluare și tratament."
+      "description": "Sprijin nutrițional în colaborare cu profesioniștii implicați în evaluare și tratament."
     }
   ],
-  "nutrition_disclaimer": "Ședințele au caracter educațional și nu înlocuiesc evaluarea medicală, tratamentul sau terapia nutrițională specializată atunci când acestea sunt indicate.",
+  "nutrition_disclaimer": "Ședințele au caracter educațional și nu înlocuiesc evaluarea medicală și tratamentul atunci când acestea sunt indicate.",
   "nutrition_cta": "Solicită informații",
   "nutrition_cta_note": "Vezi serviciile și tarifele afișate mai jos.",
   "psycho_title": "Psihoeducație și educație pentru sănătate mintală",
