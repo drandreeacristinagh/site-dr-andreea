@@ -1,0 +1,45 @@
+{
+  "eyebrow": "INFORMAȚII LEGALE",
+  "title": "Politica de confidențialitate",
+  "updated": "26 octombrie 2026",
+  "intro": "Respectarea vieții private este importantă. Această pagină explică ce date personale pot fi prelucrate atunci când vizitezi site-ul sau alegi să mă contactezi. Informațiile de mai jos privesc site-ul de prezentare și nu constituie o informare pentru eventuale servicii desfășurate prin alte platforme.",
+  "sections": [
+    {
+      "title": "1. Cine răspunde de prelucrarea datelor",
+      "body": "Pentru mesajele trimise prin datele de contact afișate pe acest site: Dr. Andreea-Cristina Gheorghe. Contact pentru întrebări privind datele personale: dr.andreeacristinagh@gmail.com.\n\nÎn funcție de natura unei colaborări sau a unui serviciu prestat, identitatea completă a operatorului și informarea specifică pot fi comunicate separat. Datele de identificare profesională și fiscală, dacă sunt necesare pentru activitatea desfășurată, trebuie completate înainte de folosirea acestei pagini ca politică finală."
+    },
+    {
+      "title": "2. Ce date pot fi prelucrate",
+      "body": "Dacă îmi scrii prin e-mail, WhatsApp sau Instagram, pot primi numele sau identificatorul tău, datele de contact și informațiile pe care alegi să le incluzi în mesaj.\n\nLa accesarea site-ului, furnizorul de găzduire poate prelucra date tehnice, precum adresa IP, momentul accesării și informații necesare securității și funcționării serviciului. Nu există un formular de colectare a datelor medicale pe acest site."
+    },
+    {
+      "title": "3. Scopuri și temeiuri",
+      "body": "Folosesc datele din mesajele primite pentru a răspunde solicitărilor și, după caz, pentru a comunica informații administrative despre activitățile educaționale. Temeiul poate fi interesul legitim de a răspunde corespondenței sau demersurile făcute la cererea ta înainte de încheierea unui contract, în funcție de solicitare.\n\nDatele tehnice prelucrate pentru funcționarea și securitatea site-ului pot avea ca temei interesul legitim al furnizorului sau al operatorului, în condițiile aplicabile. Pentru alte scopuri, dacă vor fi introduse, informarea va fi actualizată."
+    },
+    {
+      "title": "4. Date despre sănătate și mesaje sensibile",
+      "body": "Te rog să nu trimiți prin canalele generale de contact documente medicale, diagnostice sau alte informații sensibile, decât dacă există un canal și o informare adecvate scopului respectiv. Acest site nu oferă consultații medicale și nu este destinat urgențelor."
+    },
+    {
+      "title": "5. Destinatari și servicii externe",
+      "body": "Site-ul este găzduit prin Cloudflare Pages. Dacă alegi să folosești linkurile către WhatsApp sau Instagram, prelucrarea datelor de către aceste servicii este supusă și propriilor politici de confidențialitate. Comunicarea prin e-mail implică furnizorii serviciilor de e-mail folosite de expeditor și destinatar.\n\nNu public datele primite în mesaje și nu le folosesc pentru liste de marketing fără un temei adecvat. Posibilele transferuri internaționale efectuate de furnizorii externi trebuie analizate potrivit documentației acestora."
+    },
+    {
+      "title": "6. Cât timp sunt păstrate datele",
+      "body": "Mesajele și datele de contact sunt păstrate numai atât timp cât este necesar pentru gestionarea solicitării și pentru eventuale obligații legale sau apărarea unor drepturi. Duratele concrete și regulile de ștergere trebuie stabilite și verificate înainte de publicarea politicii ca versiune finală. Datele tehnice gestionate de furnizorii externi urmează propriile politici de retenție."
+    },
+    {
+      "title": "7. Cookie-uri și statistici",
+      "body": "În versiunea actuală a site-ului nu am configurat intenționat instrumente proprii de publicitate comportamentală sau analiză a vizitatorilor. Furnizorul de găzduire ori serviciile externe accesate prin linkuri pot folosi tehnologii și date tehnice conform propriilor politici. Dacă voi introduce instrumente de analiză, formulare sau alte cookie-uri neesențiale, voi actualiza această pagină și voi implementa, unde este necesar, mecanisme de consimțământ."
+    },
+    {
+      "title": "8. Drepturile tale",
+      "body": "În condițiile Regulamentului (UE) 2016/679 (GDPR), poți solicita acces la date, rectificarea sau ștergerea lor, restricționarea prelucrării, opoziția la anumite prelucrări și, când sunt îndeplinite condițiile, portabilitatea datelor. Dacă o prelucrare se bazează pe consimțământ, acesta poate fi retras fără a afecta legalitatea prelucrării anterioare.\n\nPentru solicitări, scrie la dr.andreeacristinagh@gmail.com. Ai și dreptul să depui o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP): www.dataprotection.ro."
+    },
+    {
+      "title": "9. Modificări ale politicii",
+      "body": "Pot actualiza această politică atunci când se schimbă funcționalitățile site-ului, furnizorii utilizați sau obligațiile aplicabile. Versiunea curentă și data ultimei actualizări vor fi afișate pe această pagină."
+    }
+  ],
+  "footer_note": "Această politică privește site-ul de prezentare. Pentru activități desfășurate prin alte platforme se pot aplica informări suplimentare."
+}

@@ -1,6 +1,6 @@
 {
   "brand_name": "Dr. Andreea-Cristina Gheorghe",
-  "brand_subtitle": "medic rezident psihiatrie pediatrică · specialist în nutriție",
+  "brand_subtitle": "Medic rezident în psihiatrie pediatrică · Formator certificat · Educație nutrițională",
   "hero_eyebrow": "SĂNĂTATE MINTALĂ · NUTRIȚIE · EDUCAȚIE",
   "hero_title": "Dincolo de mituri, mai aproape de dovezi.",
   "hero_description": "Un spațiu dedicat înțelegerii sănătății mintale, dezvoltării copilului și adolescentului și relației dintre alimentație, corp și emoții. Informații bazate pe dovezi științifice, prezentate cu claritate, empatie și respect pentru fiecare persoană.",
@@ -17,8 +17,8 @@
   "resources_title": "Resurse",
   "resources_empty": "Resursele vor fi disponibile în curând.",
   "contact_eyebrow": "Să păstrăm legătura",
-  "contact_title": "Trimite-mi un mesaj și povestim cu drag!",
-  "contact_description": "Pentru informații despre programări, mă poți contacta folosind datele din dreapta.",
+  "contact_title": "Hai să discutăm",
+  "contact_description": "Trimite o solicitare scurtă. Nu include informații medicale sau alte date sensibile în acest formular.",
   "disclaimer": "Acest site are scop informativ și educațional. Conținutul său nu înlocuiește evaluarea medicală, diagnosticul sau recomandările individualizate ale unui profesionist.",
   "hero_image": "/assets/fotografie-principala.jpg",
   "about_image": "/assets/fotografie-despre-mine.jpg",
@@ -27,9 +27,59 @@
   "contact_instagram": "https://www.instagram.com/dr.andreeacristinagh/",
   "brand_initials": "AC",
   "professional_title": "Parcurs profesional",
-  "professional_intro": "",
+  "professional_intro": "Un parcurs construit la intersecția medicinei, sănătății mintale și educației pentru sănătate.",
   "professional_empty": "Etapele profesionale vor fi adăugate în curând.",
-  "professional_entries": [],
+  "professional_entries": [
+    {
+      "period": "2025 – prezent",
+      "title": "Medic rezident – Psihiatrie pediatrică",
+      "institution": "Spitalul Clinic de Psihiatrie „Prof. Dr. Al. Obregia”, București",
+      "category": "Experiență profesională",
+      "description": ""
+    },
+    {
+      "period": "2023 – 2024",
+      "title": "Medic rezident – Medicină fizică și de reabilitare",
+      "institution": "Spitalul Universitar de Urgență Elias, București",
+      "category": "Experiență profesională",
+      "description": ""
+    },
+    {
+      "period": "2022",
+      "title": "Medic rezident – Genetică medicală",
+      "institution": "UMF „Carol Davila”, București; stagiu la Personal Genetics SRL",
+      "category": "Experiență profesională",
+      "description": ""
+    },
+    {
+      "period": "2015 – 2021",
+      "title": "Doctor-medic",
+      "institution": "Universitatea de Medicină și Farmacie „Carol Davila” – Facultatea de Medicină, București",
+      "category": "Studii universitare",
+      "description": ""
+    },
+    {
+      "period": "2022 – 2024",
+      "title": "Nutriționist și Dietetician – program privat de formare informală",
+      "institution": "ABC Fitness School",
+      "category": "Formare complementară",
+      "description": "Program de formare informală în nutriție și dietetică (aproximativ 16 luni); nu reprezintă autorizare în profesia de dietetician."
+    },
+    {
+      "period": "2024",
+      "title": "Alimentație în tulburări endocrine",
+      "institution": "ABC Fitness School",
+      "category": "Formare complementară",
+      "description": ""
+    },
+    {
+      "period": "2023",
+      "title": "Formator – diplomă acreditată",
+      "institution": "ABC Fitness School",
+      "category": "Formare complementară",
+      "description": ""
+    }
+  ],
   "focus_intro": "",
   "focus_empty": "Domeniile de interes vor fi disponibile în curând.",
   "focus_items": [
@@ -79,7 +129,7 @@
   ],
   "nutrition_disclaimer": "Ședințele au caracter educațional și nu înlocuiesc evaluarea medicală, tratamentul sau terapia nutrițională specializată atunci când acestea sunt indicate.",
   "nutrition_cta": "Solicită informații",
-  "nutrition_cta_note": "Detalii despre desfășurarea ședințelor, disponibilitate și tarife, la cerere.",
+  "nutrition_cta_note": "Vezi serviciile și tarifele afișate mai jos.",
   "psycho_title": "Psihoeducație și educație pentru sănătate mintală",
   "psycho_intro": "Înțelegerea sănătății mintale începe cu informația potrivită.",
   "psycho_description": "În calitate de medic rezident în psihiatrie pediatrică, îmi propun să fac informațiile despre sănătatea mintală și dezvoltarea copilului și adolescentului mai accesibile, printr-o abordare bazată pe dovezi științifice, empatie și respect pentru particularitățile individuale. Activitățile de psihoeducație urmăresc înțelegerea dificultăților emoționale, comportamentale și de neurodezvoltare, combaterea miturilor și sprijinirea persoanelor și familiilor în luarea unor decizii informate.",
@@ -96,5 +146,253 @@
   "psycho_disclaimer": "Activitățile au caracter educațional și nu constituie consultații psihiatrice, evaluare diagnostică sau tratament.",
   "articles": [],
   "resources": [],
-  "extra_sections": []
+  "extra_sections": [],
+  "publications_title": "Publicații științifice",
+  "publications": [
+    {
+      "year": "2024",
+      "title": "Frailty and Loneliness in Older Adults: A Narrative Review",
+      "journal": "Geriatrics",
+      "url": "https://doi.org/10.3390/geriatrics9050119"
+    },
+    {
+      "year": "2022",
+      "title": "Role of Immunohistochemistry in the Diagnosis and Staging of Cutaneous Squamous-Cell Carcinomas (Review)",
+      "journal": "Experimental and Therapeutic Medicine",
+      "url": "https://doi.org/10.3892/etm.2022.11308"
+    }
+  ],
+  "pricing_title": "Servicii și tarife",
+  "pricing_intro": "Cred în comunicarea transparentă, inclusiv atunci când vine vorba despre costuri. Mai jos găsești tarifele și ce include fiecare serviciu, astfel încât să poți decide în cunoștință de cauză.",
+  "pricing_groups": [
+    {
+      "title": "Educație nutrițională · Online",
+      "items": [
+        {
+          "name": "Întâlnire individuală",
+          "duration": "50 min",
+          "price": "180 lei",
+          "description": "Discuție educațională individuală."
+        },
+        {
+          "name": "Întâlnire individuală cu plan personalizat",
+          "duration": "50 min + plan",
+          "price": "300 lei",
+          "description": "Include întâlnirea și elaborarea ulterioară a planului."
+        },
+        {
+          "name": "Întâlnire de urmărire",
+          "duration": "30 min",
+          "price": "130 lei",
+          "description": "Revederea obiectivelor și clarificări."
+        },
+        {
+          "name": "Întâlnire de urmărire cu actualizarea planului",
+          "duration": "30 min + actualizare",
+          "price": "200 lei",
+          "description": "Include întâlnirea și actualizarea planului."
+        }
+      ]
+    },
+    {
+      "title": "Psihoeducație · Online",
+      "items": [
+        {
+          "name": "Întâlnire individuală",
+          "duration": "50 min",
+          "price": "180 lei",
+          "description": "Activitate educațională, fără evaluare diagnostică."
+        },
+        {
+          "name": "Întâlnire pentru părinți",
+          "duration": "60 min",
+          "price": "200 lei",
+          "description": "Informații și orientare educațională."
+        },
+        {
+          "name": "Pachet 3 întâlniri individuale",
+          "duration": "3 × 50 min",
+          "price": "490 lei",
+          "description": "Trei întâlniri tematice."
+        },
+        {
+          "name": "Ateliere și colaborări",
+          "duration": "Durată stabilită împreună",
+          "price": "La cerere",
+          "description": "Ofertă în funcție de format și participanți."
+        }
+      ]
+    }
+  ],
+  "packages_title": "Pachete lunare",
+  "packages": [
+    {
+      "name": "Pachet de început",
+      "price": "750 lei",
+      "comparison": "900 lei separat · Economie 150 lei",
+      "description": "O întâlnire inițială cu plan personalizat, trei întâlniri de urmărire cu actualizări și clarificări prin mesaje în limitele convenite."
+    },
+    {
+      "name": "Pachet de continuitate",
+      "price": "650 lei",
+      "comparison": "800 lei separat · Economie 150 lei",
+      "description": "Patru întâlniri de urmărire cu actualizări și clarificări prin mesaje în limitele convenite."
+    }
+  ],
+  "pricing_note": "Îmi rezerv dreptul de a actualiza periodic tarifele afișate. Modificările vor fi comunicate în prealabil și nu vor afecta serviciile deja achitate sau programările confirmate la tariful anterior.",
+  "pricing_scope_note": "Serviciile sunt prezentate în scop informativ. Publicarea sau contractarea intervențiilor nutriționale individualizate în contexte medicale și a serviciilor individuale de psihoeducație necesită verificarea încadrării profesionale și legale aplicabile.",
+  "process_title": "Cum decurge colaborarea",
+  "process_intro": "Un proces simplu, cu pași clari de la primul mesaj până la întâlnirea online.",
+  "process_steps": [
+    {
+      "title": "Trimiți solicitarea",
+      "description": "Completezi formularul scurt și alegi serviciul dorit."
+    },
+    {
+      "title": "Primești un răspuns",
+      "description": "Analizez solicitarea și revin cu informații despre disponibilitate."
+    },
+    {
+      "title": "Pregătim întâlnirea",
+      "description": "Dacă este necesar, primești separat un chestionar preliminar și detalii de conectare."
+    },
+    {
+      "title": "Ne întâlnim online",
+      "description": "Discutăm obiectivele și stabilim pașii următori."
+    }
+  ],
+  "faq_title": "Întrebări frecvente",
+  "faqs": [
+    {
+      "question": "Cum solicit o întâlnire?",
+      "answer": "Completează formularul scurt din secțiunea Contact. Revin ulterior cu detalii despre disponibilitate și confirmare."
+    },
+    {
+      "question": "Întâlnirile au loc online?",
+      "answer": "Da, întâlnirile individuale sunt propuse în format online."
+    },
+    {
+      "question": "Pot solicita o întâlnire pentru copilul meu?",
+      "answer": "Poți trimite o solicitare în calitate de părinte sau reprezentant legal; vom verifica dacă activitatea educațională solicitată se încadrează în serviciile disponibile."
+    },
+    {
+      "question": "Oferi consultații de psihiatrie pediatrică prin acest site?",
+      "answer": "Nu. Activitățile de psihoeducație nu reprezintă consultații psihiatrice, diagnostic sau tratament."
+    },
+    {
+      "question": "Ce include un plan personalizat?",
+      "answer": "Conținutul și limitele planului sunt stabilite în prealabil. Serviciile individualizate care intră în sfera unei profesii reglementate pot fi oferite doar în condițiile legale aplicabile."
+    },
+    {
+      "question": "Ce se întâmplă dacă trebuie să anulez?",
+      "answer": "Condițiile de anulare și reprogramare se comunică înainte de confirmarea și achitarea serviciului."
+    },
+    {
+      "question": "Trebuie să trimit informații medicale prin formular?",
+      "answer": "Nu. Formularul de contact este destinat doar solicitărilor inițiale. Te rog să nu incluzi diagnostice, tratamente sau alte date medicale în mesaj."
+    }
+  ],
+  "form_title": "Solicită informații",
+  "form_intro": "Alege tema și lasă-mi datele de contact. Formularul pregătește un mesaj pe care îl poți trimite din aplicația ta de e-mail.",
+  "form_steps_labels": [
+    "Serviciu",
+    "Detalii",
+    "Contact",
+    "Verificare"
+  ],
+  "form_services": [
+    {
+      "value": "Nutriție",
+      "label": "Educație nutrițională",
+      "topics": [
+        "Managementul greutății",
+        "Organizarea meselor",
+        "Relația cu alimentația",
+        "Selectivitate alimentară",
+        "Alte teme"
+      ]
+    },
+    {
+      "value": "Psihoeducație",
+      "label": "Psihoeducație",
+      "topics": [
+        "ADHD",
+        "Autism",
+        "Dezvoltarea copilului",
+        "Emoții și comportament",
+        "Alte teme"
+      ]
+    },
+    {
+      "value": "Ateliere",
+      "label": "Ateliere și colaborări",
+      "topics": [
+        "Atelier pentru părinți",
+        "Prezentare educațională",
+        "Colaborare organizațională"
+      ]
+    },
+    {
+      "value": "Nesigur",
+      "label": "Nu știu încă",
+      "topics": [
+        "Aș dori îndrumare"
+      ]
+    }
+  ],
+  "form_labels": {
+    "name": "Nume",
+    "email": "Adresă de e-mail",
+    "phone": "Telefon (opțional)",
+    "message": "Mesaj scurt (opțional)",
+    "topic": "Tema de interes",
+    "recipient": "Solicitarea este pentru",
+    "recipient_options": [
+      "Mine",
+      "Copilul meu",
+      "Altă persoană"
+    ],
+    "privacy": "Am citit politica de confidențialitate și înțeleg că mesajul va fi pregătit în aplicația mea de e-mail.",
+    "back": "Înapoi",
+    "next": "Continuă",
+    "send": "Deschide mesajul în e-mail",
+    "no_health": "Nu introduce diagnostice, tratamente sau alte informații medicale în acest formular.",
+    "review": "Verifică solicitarea înainte de a deschide e-mailul. Trimiterea se finalizează în aplicația ta de e-mail."
+  },
+  "footer_rights": "Toate drepturile rezervate",
+  "footer_privacy": "Confidențialitate",
+  "footer_top": "Înapoi sus ↑",
+  "nav_labels": {
+    "despre": "Despre mine",
+    "parcurs": "Parcurs profesional",
+    "arii": "Domenii de interes",
+    "ofer": "Ce ofer",
+    "tarife": "Servicii și tarife",
+    "colaborare": "Colaborare",
+    "articole": "Articole",
+    "resurse": "Resurse",
+    "faq": "Întrebări frecvente",
+    "contact": "Contact"
+  },
+  "section_labels": {
+    "despre": "DESPRE MINE",
+    "parcurs": "PARCURS PROFESIONAL",
+    "arii": "DOMENII DE INTERES",
+    "ofer": "CE OFER",
+    "tarife": "SERVICII ȘI TARIFE",
+    "colaborare": "CUM DECURGE COLABORAREA",
+    "articole": "ARTICOLE",
+    "resurse": "RESURSE",
+    "faq": "ÎNTREBĂRI FRECVENTE",
+    "contact": "CONTACT"
+  },
+  "hero_cta_articles": "Explorează articolele",
+  "hero_cta_about": "Despre mine",
+  "contact_label_email": "E-MAIL",
+  "contact_label_whatsapp": "WHATSAPP",
+  "contact_label_instagram": "INSTAGRAM",
+  "contact_whatsapp_text": "Scrie-mi pe WhatsApp",
+  "contact_instagram_text": "@dr.andreeacristinagh",
+  "resource_open_text": "Deschide resursa ↗",
+  "hero_image_position": "50% 13%"
 }
