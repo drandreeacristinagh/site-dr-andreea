@@ -1,31 +1,19 @@
 {
   "brand_name": "Dr. Andreea-Cristina Gheorghe",
   "brand_subtitle": "Medic rezident în psihiatrie pediatrică · Formator certificat · Educație nutrițională",
+  "brand_initials": "AC",
   "hero_eyebrow": "SĂNĂTATE MINTALĂ · NUTRIȚIE · EDUCAȚIE",
   "hero_title": "Dincolo de mituri, mai aproape de dovezi.",
   "hero_description": "Un spațiu dedicat înțelegerii sănătății mintale, dezvoltării copilului și adolescentului și relației dintre alimentație, corp și emoții. Informații bazate pe dovezi științifice, prezentate cu claritate, empatie și respect pentru fiecare persoană.",
   "hero_note": "Nutriție cu sens, fără promisiuni miraculoase.",
   "intro": "Informații explicate cu grijă, pentru oameni diferiți, cu povești și nevoi diferite. ",
+  "hero_image": "/assets/fotografie-principala.jpg",
   "about_eyebrow": "Bun venit",
   "about_title": "Mai întâi, să facem cunoștință.",
   "about_intro": "Sunt Dr. Andreea-Cristina Gheorghe, medic rezident anul II psihiatrie pediatrică, pasionată de înțelegerea comportamentului uman și a legăturilor dintre sănătatea mintală, nutriție și starea de bine.",
   "about_description": "Am creat acest spațiu din dorința de a împărtăși informații medicale și științifice într-un mod accesibil, fără a pierde din vedere complexitatea și unicitatea fiecărei persoane.\n\nCred într-o abordare bazată pe dovezi, în curiozitatea de a pune întrebări și în importanța unui dialog deschis, fără prejudecăți sau răspunsuri universale.",
   "about_signature": "Sper să găsești aici informații care să îți fie de folos, indiferent de întrebările care te-au adus pe această pagină. ✳",
-  "focus_title": "Domenii de interes",
-  "articles_title": "Articole",
-  "articles_empty": "Articolele vor fi disponibile în curând.",
-  "resources_title": "Resurse",
-  "resources_empty": "Resursele vor fi disponibile în curând.",
-  "contact_eyebrow": "Să păstrăm legătura",
-  "contact_title": "Hai să discutăm",
-  "contact_description": "Trimite o solicitare scurtă. Nu include informații medicale sau alte date sensibile în acest formular.",
-  "disclaimer": "Acest site are scop informativ și educațional. Conținutul său nu înlocuiește evaluarea medicală, diagnosticul sau recomandările individualizate ale unui profesionist.",
-  "hero_image": "/assets/fotografie-principala.jpg",
   "about_image": "/assets/fotografie-despre-mine.jpg",
-  "contact_email": "dr.andreeacristinagh@gmail.com",
-  "contact_whatsapp": "+40742195274",
-  "contact_instagram": "https://www.instagram.com/dr.andreeacristinagh/",
-  "brand_initials": "AC",
   "professional_title": "Parcurs profesional",
   "professional_intro": "Un parcurs construit la intersecția medicinei, sănătății mintale și educației pentru sănătate.",
   "professional_empty": "Etapele profesionale vor fi adăugate în curând.",
@@ -34,53 +22,47 @@
       "period": "2015 – 2021",
       "title": "Doctor-medic",
       "institution": "Universitatea de Medicină și Farmacie „Carol Davila” – Facultatea de Medicină, București",
-      "category": "Studii universitare",
-      "description": ""
+      "category": "Studii universitare"
     },
     {
       "period": "2025 – prezent",
       "title": "Medic rezident – Psihiatrie pediatrică",
       "institution": "Spitalul Clinic de Psihiatrie „Prof. Dr. Al. Obregia”, București",
-      "category": "Experiență profesională",
-      "description": ""
+      "category": "Experiență profesională"
     },
     {
       "period": "2023 – 2024",
       "title": "Medic rezident – Medicină fizică și de reabilitare",
       "institution": "Spitalul Universitar de Urgență Elias, București",
-      "category": "Experiență profesională",
-      "description": ""
+      "category": "Experiență profesională"
     },
     {
       "period": "2022",
       "title": "Medic rezident – Genetică medicală",
       "institution": "UMF „Carol Davila”, București; stagiu la Personal Genetics SRL",
-      "category": "Experiență profesională",
-      "description": ""
+      "category": "Experiență profesională"
     },
     {
       "period": "2024",
       "title": "Alimentație în tulburări endocrine",
       "institution": "ABC Fitness School",
-      "category": "Formare complementară",
-      "description": ""
+      "category": "Formare complementară"
     },
     {
       "period": "2023",
       "title": "Formator – diplomă acreditată",
       "institution": "ABC Fitness School",
-      "category": "Formare complementară",
-      "description": ""
+      "category": "Formare complementară"
     },
     {
       "period": "2022 – 2024",
       "title": "Nutriționist și Dietetician – program privat de formare informală",
       "institution": "ABC Fitness School",
       "category": "Formare complementară",
-      "description": "Program de formare informală în nutriție și dietetică (aproximativ 16 luni); nu reprezintă autorizare în profesia de dietetician."
+      "description": "Program de formare informală în nutriție și dietetică (aproximativ 16 luni)."
     }
   ],
-  "focus_intro": "",
+  "focus_title": "Domenii de interes",
   "focus_empty": "Domeniile de interes vor fi disponibile în curând.",
   "focus_items": [
     {
@@ -144,10 +126,40 @@
     "Sănătate mintală la copii și adolescenți"
   ],
   "psycho_disclaimer": "Activitățile au caracter educațional și nu constituie consultații psihiatrice, evaluare diagnostică sau tratament.",
-  "articles": [],
-  "resources": [],
-  "extra_sections": [],
+  "articles_title": "Articole",
+  "articles_empty": "Articolele vor fi disponibile în curând.",
+  "resources_title": "Resurse",
+  "resources_empty": "Resursele vor fi disponibile în curând.",
+  "contact_eyebrow": "Să păstrăm legătura",
+  "contact_title": "Hai să discutăm",
+  "contact_description": "Trimite o solicitare scurtă. Nu include informații medicale sau alte date sensibile în acest formular.",
+  "disclaimer": "Acest site are scop informativ și educațional. Conținutul său nu înlocuiește evaluarea medicală, diagnosticul sau recomandările individualizate ale unui profesionist.",
+  "contact_email": "dr.andreeacristinagh@gmail.com",
+  "contact_whatsapp": "+40742195274",
+  "contact_instagram": "https://www.instagram.com/dr.andreeacristinagh/",
   "publications_title": "Publicații științifice",
+  "pricing_title": "Servicii și tarife",
+  "pricing_intro": "Cred în comunicarea transparentă, inclusiv atunci când vine vorba despre costuri. Mai jos găsești tarifele și ce include fiecare serviciu, astfel încât să poți decide în cunoștință de cauză.",
+  "packages_title": "Pachete lunare",
+  "pricing_note": "Îmi rezerv dreptul de a actualiza periodic tarifele afișate. Modificările vor fi comunicate în prealabil și nu vor afecta serviciile deja achitate sau programările confirmate la tariful anterior.",
+  "pricing_scope_note": "Serviciile sunt prezentate în scop informativ. Publicarea sau contractarea intervențiilor nutriționale individualizate în contexte medicale și a serviciilor individuale de psihoeducație necesită verificarea încadrării profesionale și legale aplicabile.",
+  "process_title": "Cum decurge colaborarea",
+  "process_intro": "Un proces simplu, cu pași clari de la primul mesaj până la întâlnirea online.",
+  "faq_title": "Întrebări frecvente",
+  "form_title": "Solicită informații",
+  "form_intro": "Completează formularul de mai jos pentru a pregăti solicitarea. Nu include date medicale sau alte informații sensibile.",
+  "footer_rights": "Toate drepturile rezervate",
+  "footer_privacy": "Confidențialitate",
+  "footer_top": "Înapoi sus ↑",
+  "hero_cta_articles": "Despre mine",
+  "hero_cta_about": "Ce ofer",
+  "contact_label_email": "E-MAIL",
+  "contact_label_whatsapp": "WHATSAPP",
+  "contact_label_instagram": "INSTAGRAM",
+  "contact_whatsapp_text": "Scrie-mi pe WhatsApp",
+  "contact_instagram_text": "@dr.andreeacristinagh",
+  "resource_open_text": "Deschide resursa ↗",
+  "hero_image_position": "50% 13%",
   "publications": [
     {
       "year": "2024",
@@ -162,8 +174,6 @@
       "url": "https://doi.org/10.3892/etm.2022.11308"
     }
   ],
-  "pricing_title": "Servicii și tarife",
-  "pricing_intro": "Cred în comunicarea transparentă, inclusiv atunci când vine vorba despre costuri. Mai jos găsești tarifele și ce include fiecare serviciu, astfel încât să poți decide în cunoștință de cauză.",
   "pricing_groups": [
     {
       "title": "Educație nutrițională · Online",
@@ -224,7 +234,6 @@
       ]
     }
   ],
-  "packages_title": "Pachete lunare",
   "packages": [
     {
       "name": "Pachet de început",
@@ -239,10 +248,6 @@
       "description": "Patru întâlniri de urmărire cu actualizări și clarificări prin mesaje în limitele convenite."
     }
   ],
-  "pricing_note": "Îmi rezerv dreptul de a actualiza periodic tarifele afișate. Modificările vor fi comunicate în prealabil și nu vor afecta serviciile deja achitate sau programările confirmate la tariful anterior.",
-  "pricing_scope_note": "Serviciile sunt prezentate în scop informativ. Publicarea sau contractarea intervențiilor nutriționale individualizate în contexte medicale și a serviciilor individuale de psihoeducație necesită verificarea încadrării profesionale și legale aplicabile.",
-  "process_title": "Cum decurge colaborarea",
-  "process_intro": "Un proces simplu, cu pași clari de la primul mesaj până la întâlnirea online.",
   "process_steps": [
     {
       "title": "Trimiți solicitarea",
@@ -261,7 +266,6 @@
       "description": "Discutăm obiectivele și stabilim pașii următori."
     }
   ],
-  "faq_title": "Întrebări frecvente",
   "faqs": [
     {
       "question": "Cum solicit o întâlnire?",
@@ -291,14 +295,6 @@
       "question": "Trebuie să trimit informații medicale prin formular?",
       "answer": "Nu. Formularul de contact este destinat doar solicitărilor inițiale. Te rog să nu incluzi diagnostice, tratamente sau alte date medicale în mesaj."
     }
-  ],
-  "form_title": "Solicită informații",
-  "form_intro": "Completează formularul de mai jos pentru a pregăti solicitarea. Nu include date medicale sau alte informații sensibile.",
-  "form_steps_labels": [
-    "Serviciu",
-    "Detalii",
-    "Contact",
-    "Verificare"
   ],
   "form_services": [
     {
@@ -340,6 +336,12 @@
       ]
     }
   ],
+  "form_steps_labels": [
+    "Serviciu",
+    "Detalii",
+    "Contact",
+    "Verificare"
+  ],
   "form_labels": {
     "name": "Nume",
     "email": "Adresă de e-mail",
@@ -347,17 +349,17 @@
     "message": "Mesaj scurt (opțional)",
     "topic": "Tema de interes",
     "recipient": "Solicitarea este pentru",
-    "recipient_options": [
-      "Pentru mine",
-      "Pentru copilul meu",
-      "Pentru altă persoană"
-    ],
     "privacy": "Am citit politica de confidențialitate și înțeleg că solicitarea se transmite prin aplicația mea de e-mail.",
     "back": "Înapoi",
     "next": "Continuă",
     "send": "Pregătește e-mailul",
     "no_health": "Nu introduce diagnostice, tratamente sau alte informații medicale în acest formular.",
     "review": "Verifică solicitarea înainte de a deschide e-mailul. Trimiterea se finalizează în aplicația ta de e-mail.",
+    "recipient_options": [
+      "Pentru mine",
+      "Pentru copilul meu",
+      "Pentru altă persoană"
+    ],
     "service": "Serviciul dorit",
     "privacy_link": "Citește politica de confidențialitate",
     "select_placeholder": "Selectează o opțiune",
@@ -365,9 +367,6 @@
     "topic_placeholder": "Selectează mai întâi un serviciu",
     "required_note": "Câmpurile marcate cu * sunt obligatorii."
   },
-  "footer_rights": "Toate drepturile rezervate",
-  "footer_privacy": "Confidențialitate",
-  "footer_top": "Înapoi sus ↑",
   "nav_labels": {
     "despre": "Despre mine",
     "parcurs": "Parcurs profesional",
@@ -392,15 +391,6 @@
     "faq": "ÎNTREBĂRI FRECVENTE",
     "contact": "CONTACT"
   },
-  "hero_cta_articles": "Despre mine",
-  "hero_cta_about": "Ce ofer",
-  "contact_label_email": "E-MAIL",
-  "contact_label_whatsapp": "WHATSAPP",
-  "contact_label_instagram": "INSTAGRAM",
-  "contact_whatsapp_text": "Scrie-mi pe WhatsApp",
-  "contact_instagram_text": "@dr.andreeacristinagh",
-  "resource_open_text": "Deschide resursa ↗",
-  "hero_image_position": "50% 13%",
   "skip_link": "Sari la conținut",
   "brand_home_aria": "Pagina principală",
   "menu_open_aria": "Deschide meniul",
