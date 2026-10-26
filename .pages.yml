@@ -2,120 +2,659 @@ media:
   input: assets
   output: /assets
 content:
-  - name: site
-    label: Textele și fotografiile site-ului
-    type: file
-    path: data/site.json
-    format: json
+- name: site
+  label: Textele și fotografiile site-ului
+  type: file
+  path: data/site.json
+  format: json
+  fields:
+  - name: brand_name
+    label: Antet – nume
+    type: string
+  - name: brand_subtitle
+    label: Antet – subtitlu
+    type: string
+  - name: brand_initials
+    label: Antet – inițiale
+    type: string
+  - name: hero_eyebrow
+    label: Prima pagină – supratitlu
+    type: string
+  - name: hero_title
+    label: Prima pagină – titlu
+    type: string
+  - name: hero_description
+    label: Prima pagină – descriere
+    type: text
+  - name: hero_note
+    label: Prima pagină – notă
+    type: string
+  - name: intro
+    label: Banda de introducere
+    type: text
+  - name: hero_image
+    label: Prima pagină – fotografie
+    type: image
+  - name: about_eyebrow
+    label: Despre mine – supratitlu
+    type: string
+  - name: about_title
+    label: Despre mine – titlu
+    type: string
+  - name: about_intro
+    label: Despre mine – prezentare
+    type: text
+  - name: about_description
+    label: Despre mine – continuare
+    type: text
+  - name: about_signature
+    label: Despre mine – încheiere
+    type: string
+  - name: about_image
+    label: Despre mine – fotografie
+    type: image
+  - name: professional_title
+    label: Parcurs profesional – titlu
+    type: string
+  - name: professional_intro
+    label: Parcurs profesional – introducere
+    type: text
+  - name: professional_empty
+    label: Parcurs profesional – mesaj când lista este goală
+    type: string
+  - name: professional_entries
+    label: Parcurs profesional – adaugă oricâte etape
+    type: object
+    list: true
     fields:
-      - name: brand_name
-        label: "Antet – nume"
+    - name: period
+      label: Perioadă
+      type: string
+    - name: title
+      label: Titlu
+      type: string
+    - name: institution
+      label: Instituție
+      type: string
+    - name: category
+      label: Categorie (studii / experiență / curs / certificare)
+      type: string
+    - name: description
+      label: Descriere
+      type: text
+  - name: focus_title
+    label: Domenii – titlu
+    type: string
+  - name: focus_intro
+    label: Domenii – introducere
+    type: text
+  - name: focus_empty
+    label: Domenii – mesaj când lista este goală
+    type: string
+  - name: focus_items
+    label: Domenii de interes – adaugă / șterge / reordonează
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Domeniu
+      type: string
+    - name: description
+      label: Descriere
+      type: text
+  - name: offer_title
+    label: Ce ofer – titlu principal
+    type: string
+  - name: offer_intro
+    label: Ce ofer – introducere
+    type: text
+  - name: nutrition_title
+    label: Nutriție – titlu
+    type: string
+  - name: nutrition_intro
+    label: Nutriție – prezentare ședințe 1:1
+    type: text
+  - name: nutrition_areas_title
+    label: Nutriție – titlu arii
+    type: string
+  - name: nutrition_areas
+    label: Nutriție – arii de interes (listă editabilă)
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Arie
+      type: string
+    - name: description
+      label: Descriere
+      type: text
+  - name: nutrition_disclaimer
+    label: Nutriție – precizare
+    type: text
+  - name: nutrition_cta
+    label: Nutriție – text buton
+    type: string
+  - name: nutrition_cta_note
+    label: Nutriție – detalii contact și tarife
+    type: text
+  - name: psycho_title
+    label: Psihoeducație – titlu
+    type: string
+  - name: psycho_intro
+    label: Psihoeducație – subtitlu
+    type: text
+  - name: psycho_description
+    label: Psihoeducație – descriere
+    type: text
+  - name: psycho_topics_title
+    label: Psihoeducație – titlu teme
+    type: string
+  - name: psycho_topics
+    label: Psihoeducație – teme (adaugă oricâte)
+    type: string
+    list: true
+  - name: psycho_disclaimer
+    label: Psihoeducație – precizare
+    type: text
+  - name: articles_title
+    label: Articole – titlu
+    type: string
+  - name: articles_empty
+    label: Articole – mesaj temporar
+    type: string
+  - name: articles
+    label: Articole – publică materiale
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Titlu
+      type: string
+    - name: category
+      label: Categorie
+      type: string
+    - name: summary
+      label: Rezumat
+      type: text
+    - name: image
+      label: Imagine (cale /assets/...)
+      type: string
+    - name: body
+      label: Text articol
+      type: text
+    - name: published
+      label: Publicat (true/false)
+      type: boolean
+  - name: resources_title
+    label: Resurse – titlu
+    type: string
+  - name: resources_empty
+    label: Resurse – mesaj temporar
+    type: string
+  - name: resources
+    label: Resurse – adaugă materiale
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Titlu
+      type: string
+    - name: description
+      label: Descriere
+      type: text
+    - name: url
+      label: Link către resursă
+      type: string
+    - name: published
+      label: Publicat (true/false)
+      type: boolean
+  - name: extra_sections
+    label: Secțiuni suplimentare – titlu și text
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Titlu
+      type: string
+    - name: description
+      label: Text
+      type: text
+  - name: contact_eyebrow
+    label: Contact – supratitlu
+    type: string
+  - name: contact_title
+    label: Contact – titlu
+    type: string
+  - name: contact_description
+    label: Contact – descriere
+    type: text
+  - name: disclaimer
+    label: Contact – nota medicală
+    type: text
+  - name: contact_email
+    label: Contact – e-mail
+    type: string
+  - name: contact_whatsapp
+    label: Contact – WhatsApp
+    type: string
+  - name: contact_instagram
+    label: Contact – Instagram
+    type: string
+  - name: publications_title
+    label: Publicații – titlu
+    type: string
+  - name: pricing_title
+    label: Tarife – titlu
+    type: string
+  - name: pricing_intro
+    label: Tarife – text despre transparență
+    type: text
+  - name: packages_title
+    label: Pachete – titlu
+    type: string
+  - name: pricing_note
+    label: Tarife – dreptul de actualizare
+    type: text
+  - name: pricing_scope_note
+    label: Tarife – precizare privind serviciile
+    type: text
+  - name: process_title
+    label: Colaborare – titlu
+    type: string
+  - name: process_intro
+    label: Colaborare – introducere
+    type: text
+  - name: faq_title
+    label: FAQ – titlu
+    type: string
+  - name: form_title
+    label: Formular – titlu
+    type: string
+  - name: form_intro
+    label: Formular – introducere
+    type: text
+  - name: footer_rights
+    label: Subsol – drepturi
+    type: string
+  - name: footer_privacy
+    label: Subsol – confidențialitate
+    type: string
+  - name: footer_top
+    label: Subsol – sus
+    type: string
+  - name: hero_cta_articles
+    label: Prima pagină – buton articole
+    type: string
+  - name: hero_cta_about
+    label: Prima pagină – buton despre
+    type: string
+  - name: contact_label_email
+    label: Contact – etichetă e-mail
+    type: string
+  - name: contact_label_whatsapp
+    label: Contact – etichetă WhatsApp
+    type: string
+  - name: contact_label_instagram
+    label: Contact – etichetă Instagram
+    type: string
+  - name: contact_whatsapp_text
+    label: Contact – text WhatsApp
+    type: string
+  - name: contact_instagram_text
+    label: Contact – text Instagram
+    type: string
+  - name: resource_open_text
+    label: Resurse – text link
+    type: string
+  - name: hero_image_position
+    label: Prima fotografie – poziție CSS (ex. 50% 13%)
+    type: string
+  - name: publications
+    label: Publicații – editabile
+    type: object
+    list: true
+    fields:
+    - name: year
+      label: An
+      type: string
+    - name: title
+      label: Titlu
+      type: string
+    - name: journal
+      label: Revistă
+      type: string
+    - name: url
+      label: Link DOI
+      type: string
+  - name: pricing_groups
+    label: Tarife – categorii
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Categorie
+      type: string
+    - name: items
+      label: Servicii
+      type: object
+      list: true
+      fields:
+      - name: name
+        label: Nume
         type: string
-      - name: brand_subtitle
-        label: "Antet – subtitlu"
+      - name: duration
+        label: Durată
         type: string
-      - name: hero_eyebrow
-        label: "Prima pagină – supratitlu"
+      - name: price
+        label: Preț
         type: string
-      - name: hero_title
-        label: "Prima pagină – titlu"
-        type: string
-      - name: hero_description
-        label: "Prima pagină – descriere"
+      - name: description
+        label: Descriere
         type: text
-      - name: hero_note
-        label: "Prima pagină – nota"
-        type: string
-      - name: intro
-        label: "Banda de introducere"
-        type: text
-      - name: about_eyebrow
-        label: "Despre mine – supratitlu"
-        type: string
-      - name: about_title
-        label: "Despre mine – titlu"
-        type: string
-      - name: about_intro
-        label: "Despre mine – prezentare"
-        type: text
-      - name: about_description
-        label: "Despre mine – continuare"
-        type: text
-      - name: about_signature
-        label: "Despre mine – semnătură"
-        type: string
-      - name: focus_eyebrow
-        label: "Domenii – supratitlu"
-        type: string
-      - name: focus_title
-        label: "Domenii – titlu"
-        type: string
-      - name: focus_description
-        label: "Domenii – introducere"
-        type: text
-      - name: articles_eyebrow
-        label: "Articole – supratitlu"
-        type: string
-      - name: articles_title
-        label: "Articole – titlu"
-        type: string
-      - name: articles_description
-        label: "Articole – descriere"
-        type: string
-      - name: articles_empty
-        label: "Articole – mesaj temporar"
-        type: string
-      - name: resources_eyebrow
-        label: "Resurse – supratitlu"
-        type: string
-      - name: resources_title
-        label: "Resurse – titlu"
-        type: string
-      - name: resources_empty
-        label: "Resurse – mesaj temporar"
-        type: string
-      - name: contact_eyebrow
-        label: "Contact – supratitlu"
-        type: string
-      - name: contact_title
-        label: "Contact – titlu"
-        type: string
-      - name: contact_description
-        label: "Contact – descriere"
-        type: text
-      - name: disclaimer
-        label: "Contact – nota medicală"
-        type: text
-      - name: hero_image
-        label: "Prima pagină – fotografie"
-        type: image
-      - name: about_image
-        label: "Despre mine – fotografie"
-        type: image
-      - name: contact_email
-        label: "Contact – e-mail"
-        type: string
-      - name: contact_whatsapp
-        label: "Contact – WhatsApp (cifre cu prefix)"
-        type: string
-      - name: contact_instagram
-        label: "Contact – Instagram"
-        type: string
-      - name: topic_1_title
-        label: "Topic 1 title"
-        type: string
-      - name: topic_1_description
-        label: "Topic 1 description"
-        type: text
-      - name: topic_2_title
-        label: "Topic 2 title"
-        type: string
-      - name: topic_2_description
-        label: "Topic 2 description"
-        type: text
-      - name: topic_3_title
-        label: "Topic 3 title"
-        type: string
-      - name: topic_3_description
-        label: "Topic 3 description"
-        type: text
+  - name: packages
+    label: Pachete – editabile
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Nume
+      type: string
+    - name: price
+      label: Preț
+      type: string
+    - name: comparison
+      label: Comparație
+      type: string
+    - name: description
+      label: Conținut
+      type: text
+  - name: process_steps
+    label: Pași colaborare
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Titlu
+      type: string
+    - name: description
+      label: Descriere
+      type: text
+  - name: faqs
+    label: Întrebări frecvente
+    type: object
+    list: true
+    fields:
+    - name: question
+      label: Întrebare
+      type: string
+    - name: answer
+      label: Răspuns
+      type: text
+  - name: form_services
+    label: Formular – servicii
+    type: object
+    list: true
+    fields:
+    - name: value
+      label: Valoare
+      type: string
+    - name: label
+      label: Etichetă
+      type: string
+    - name: topics
+      label: Subiecte
+      type: string
+      list: true
+  - name: form_steps_labels
+    label: Formular – numele pașilor
+    type: string
+    list: true
+  - name: form_labels
+    label: Formular – toate etichetele
+    type: object
+    fields:
+    - name: name
+      label: Nume
+      type: string
+    - name: email
+      label: E-mail
+      type: string
+    - name: phone
+      label: Telefon
+      type: string
+    - name: message
+      label: Mesaj
+      type: string
+    - name: topic
+      label: Tema
+      type: string
+    - name: recipient
+      label: Pentru cine
+      type: string
+    - name: privacy
+      label: Informare confidențialitate
+      type: text
+    - name: back
+      label: Înapoi
+      type: string
+    - name: next
+      label: Continuă
+      type: string
+    - name: send
+      label: Deschide e-mail
+      type: string
+    - name: no_health
+      label: Avertizare date medicale
+      type: text
+    - name: review
+      label: Revizuire
+      type: text
+    - name: recipient_options
+      label: Opțiuni destinatar
+      type: string
+      list: true
+    - name: service
+      label: Service
+      type: string
+    - name: privacy_link
+      label: Privacy link
+      type: string
+    - name: select_placeholder
+      label: Select placeholder
+      type: string
+    - name: submit_note
+      label: Submit note
+      type: string
+    - name: topic_placeholder
+      label: Topic placeholder
+      type: string
+    - name: required_note
+      label: Required note
+      type: string
+  - name: nav_labels
+    label: Meniu – etichete
+    type: object
+    fields:
+    - name: despre
+      label: despre
+      type: string
+    - name: parcurs
+      label: parcurs
+      type: string
+    - name: arii
+      label: arii
+      type: string
+    - name: ofer
+      label: ofer
+      type: string
+    - name: tarife
+      label: tarife
+      type: string
+    - name: colaborare
+      label: colaborare
+      type: string
+    - name: articole
+      label: articole
+      type: string
+    - name: resurse
+      label: resurse
+      type: string
+    - name: faq
+      label: faq
+      type: string
+    - name: contact
+      label: contact
+      type: string
+  - name: section_labels
+    label: Titluri numerotate secțiuni
+    type: object
+    fields:
+    - name: despre
+      label: despre
+      type: string
+    - name: parcurs
+      label: parcurs
+      type: string
+    - name: arii
+      label: arii
+      type: string
+    - name: ofer
+      label: ofer
+      type: string
+    - name: tarife
+      label: tarife
+      type: string
+    - name: colaborare
+      label: colaborare
+      type: string
+    - name: articole
+      label: articole
+      type: string
+    - name: resurse
+      label: resurse
+      type: string
+    - name: faq
+      label: faq
+      type: string
+    - name: contact
+      label: contact
+      type: string
+  - name: skip_link
+    label: Text editabil – skip_link
+    type: string
+  - name: brand_home_aria
+    label: Text editabil – brand_home_aria
+    type: string
+  - name: menu_open_aria
+    label: Text editabil – menu_open_aria
+    type: string
+  - name: nav_aria
+    label: Text editabil – nav_aria
+    type: string
+  - name: hero_photo_alt
+    label: Text editabil – hero_photo_alt
+    type: string
+  - name: about_photo_alt
+    label: Text editabil – about_photo_alt
+    type: string
+  - name: hero_cta_articles_symbol
+    label: Text editabil – hero_cta_articles_symbol
+    type: string
+  - name: hero_cta_about_symbol
+    label: Text editabil – hero_cta_about_symbol
+    type: string
+  - name: intro_symbol
+    label: Text editabil – intro_symbol
+    type: string
+  - name: contact_icon_email
+    label: Text editabil – contact_icon_email
+    type: string
+  - name: contact_icon_whatsapp
+    label: Text editabil – contact_icon_whatsapp
+    type: string
+  - name: contact_icon_instagram
+    label: Text editabil – contact_icon_instagram
+    type: string
+  - name: footer_copyright_symbol
+    label: Text editabil – footer_copyright_symbol
+    type: string
+  - name: form_default_option
+    label: Text editabil – form_default_option
+    type: string
+  - name: form_review_service
+    label: Text editabil – form_review_service
+    type: string
+  - name: form_review_topic
+    label: Text editabil – form_review_topic
+    type: string
+  - name: form_review_recipient
+    label: Text editabil – form_review_recipient
+    type: string
+  - name: form_review_name
+    label: Text editabil – form_review_name
+    type: string
+  - name: form_review_email
+    label: Text editabil – form_review_email
+    type: string
+  - name: form_review_phone
+    label: Text editabil – form_review_phone
+    type: string
+  - name: form_review_message
+    label: Text editabil – form_review_message
+    type: string
+  - name: form_invalid_email
+    label: Text editabil – form_invalid_email
+    type: string
+  - name: form_confirm_privacy
+    label: Text editabil – form_confirm_privacy
+    type: string
+  - name: form_email_subject
+    label: Text editabil – form_email_subject
+    type: string
+  - name: privacy_home
+    label: Text editabil – privacy_home
+    type: string
+  - name: privacy_last_updated
+    label: Text editabil – privacy_last_updated
+    type: string
+  - name: professional_group_studies
+    label: Text editabil – professional_group_studies
+    type: string
+  - name: professional_group_experience
+    label: Text editabil – professional_group_experience
+    type: string
+  - name: professional_group_training
+    label: Text editabil – professional_group_training
+    type: string
+- name: privacy
+  label: Confidențialitate – politica site-ului
+  type: file
+  path: data/privacy.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Supratitlu
+    type: string
+  - name: title
+    label: Titlu
+    type: string
+  - name: updated
+    label: Data ultimei actualizări
+    type: string
+  - name: intro
+    label: Introducere
+    type: text
+  - name: sections
+    label: Secțiuni ale politicii – adaugă sau modifică
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Titlul secțiunii
+      type: string
+    - name: body
+      label: Textul secțiunii
+      type: text
+  - name: footer_note
+    label: Notă de subsol
+    type: string
