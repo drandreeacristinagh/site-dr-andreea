@@ -117,13 +117,15 @@
   "psycho_description": "În calitate de medic rezident în psihiatrie pediatrică, îmi doresc să aduc informațiile despre sănătatea mintală și dezvoltarea copilului și adolescentului mai aproape de oameni, într-un mod clar, accesibil și bazat pe dovezi științifice.\n\nPrin întâlnirile de psihoeducație, putem explora împreună dificultățile emoționale și comportamentale, particularitățile de neurodezvoltare și întrebările care apar în viața de zi cu zi. Scopul este să înțelegem mai bine aceste aspecte, să clarificăm mituri și să oferim repere utile pentru decizii informate.",
   "psycho_topics_title": "Teme abordate",
   "psycho_topics": [
-    "Neurodezvoltare",
+    "Dezvoltarea copilului și adolescentului",
     "ADHD",
     "Autism",
-    "Reglare emoțională",
-    "Tulburări afective și anxioase",
-    "Comportament și relații familiale",
-    "Sănătate mintală la copii și adolescenți"
+    "Emoții și reglare emoțională",
+    "Anxietate",
+    "Tulburări afective",
+    "Sprijin parental",
+    "Sănătate mintală la copii și adolescenți",
+    "Prevenție"
   ],
   "psycho_disclaimer": "Activitățile au caracter educațional și nu constituie consultații psihiatrice, evaluare diagnostică sau tratament.",
   "articles_title": "Articole",
