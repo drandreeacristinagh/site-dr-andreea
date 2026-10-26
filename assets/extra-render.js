@@ -30,7 +30,52 @@ add(form,'p','form-help',lab.no_health||'');
 const consent=add(form,'label','form-consent');const checkbox=add(consent,'input');checkbox.type='checkbox';checkbox.required=true;add(consent,'span','',lab.privacy||'Am citit politica de confidențialitate.');
 const privacy=add(form,'a','text-link',lab.privacy_link||d.footer_privacy||'Confidențialitate');privacy.href='privacy.html';privacy.target='_blank';privacy.rel='noopener noreferrer';
 add(form,'p','form-help',lab.submit_note||'');const send=add(form,'button','button button-dark',lab.send||'Deschide e-mailul');send.type='submit';
-form.addEventListener('submit',event=>{event.preventDefault();if(!form.reportValidity())return;
+
+const status = add(form, 'p', 'form-help', '');
+status.setAttribute('role', 'status');
+status.setAttribute('aria-live', 'polite');
+
+form.addEventListener('submit', async event => {
+  event.preventDefault();
+  if (!form.reportValidity()) return;
+
+  send.disabled = true;
+  status.textContent = 'Mesajul se trimite...';
+
+  const payload = {
+    _subject: (d.form_email_subject || 'Solicitare – ') + service.value,
+    serviciu: service.options[service.selectedIndex]?.text || service.value,
+    tema: topic.value,
+    pentru_cine: recipient.value,
+    nume: name.value,
+    email: email.value,
+    telefon: phone.value,
+    mesaj: message.value,
+    acord_confidentialitate: checkbox.checked ? 'Da' : 'Nu'
+  };
+
+  try {
+    const response = await fetch('https://formspree.io/f/mljjjoqr', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) throw new Error('Trimiterea a eșuat');
+
+    form.reset();
+    updateTopics();
+    status.textContent = 'Mesajul a fost trimis cu succes! Îți voi răspunde cât mai curând.';
+  } catch (error) {
+    status.textContent = 'Mesajul nu a putut fi trimis. Te rog să încerci din nou sau să îmi scrii direct pe e-mail.';
+  } finally {
+    send.disabled = false;
+  }
+});
+event.preventDefault();if(!form.reportValidity())return;
 const subject=(d.form_email_subject||'Solicitare – ')+service.value;
 const body=[[d.form_review_service||'Serviciu',service.options[service.selectedIndex]?.text||service.value],[d.form_review_topic||'Temă',topic.value],[d.form_review_recipient||'Pentru',recipient.value],[d.form_review_name||'Nume',name.value],[d.form_review_email||'E-mail',email.value],[d.form_review_phone||'Telefon',phone.value],[d.form_review_message||'Mesaj',message.value]].map(([key,value])=>key+': '+value).join('\n');
 window.location.href='mailto:'+encodeURIComponent(d.contact_email||'')+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
