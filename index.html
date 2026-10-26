@@ -11,14 +11,14 @@
 <link rel="icon" type="image/png" href="assets/favicon-logo.png">
 </head>
 <body>
-<a class="skip-link" href="#main">Sari la conținut</a>
+<a class="skip-link" href="#main" data-cms="skip_link">Sari la conținut</a>
 <header class="site-header">
-<a aria-label="Pagina principală" class="brand" href="#acasa">
+<a aria-label="Pagina principală" data-cms-aria="brand_home_aria" class="brand" href="#acasa">
 <span class="brand-mark"><img src="assets/logo-concept-5.png" alt="" width="42" height="42"></span>
 <span class="brand-text"><strong>Dr. Andreea-Cristina Gheorghe</strong><small>Medicină · educație · sănătate</small></span>
 </a>
-<button aria-expanded="false" aria-label="Deschide meniul" class="menu-toggle">☰</button>
-<nav aria-label="Navigare principală" class="nav"><a href="#despre" data-nav="despre">Despre mine</a><a href="#parcurs" data-nav="parcurs">Parcurs profesional</a><a href="#arii" data-nav="arii">Domenii de interes</a><a href="#ofer" data-nav="ofer">Ce ofer</a><a href="#tarife" data-nav="tarife">Servicii și tarife</a><a href="#colaborare" data-nav="colaborare">Colaborare</a><a href="#articole" data-nav="articole">Articole</a><a href="#resurse" data-nav="resurse">Resurse</a><a href="#faq" data-nav="faq">Întrebări frecvente</a><a class="nav-cta" href="#contact" data-nav="contact">Contact</a></nav>
+<button aria-expanded="false" aria-label="Deschide meniul" data-cms-aria="menu_open_aria" class="menu-toggle">☰</button>
+<nav aria-label="Navigare principală" data-cms-aria="nav_aria" class="nav"><a href="#despre" data-nav="despre">Despre mine</a><a href="#parcurs" data-nav="parcurs">Parcurs profesional</a><a href="#arii" data-nav="arii">Domenii de interes</a><a href="#ofer" data-nav="ofer">Ce ofer</a><a href="#tarife" data-nav="tarife">Servicii și tarife</a><a href="#colaborare" data-nav="colaborare">Colaborare</a><a href="#articole" data-nav="articole">Articole</a><a href="#resurse" data-nav="resurse">Resurse</a><a href="#faq" data-nav="faq">Întrebări frecvente</a><a class="nav-cta" href="#contact" data-nav="contact">Contact</a></nav>
 </header>
 <main id="main">
 <section class="hero section" id="acasa">
@@ -27,18 +27,18 @@
 <h1 data-cms="hero_title">Înțelegem mai bine.<br/><em>Avem grijă mai bine.</em></h1>
 <p class="hero-lede" data-cms="hero_description">Informații clare despre sănătatea mintală, dezvoltarea copilului și relația cu alimentația — cu nuanță, curiozitate și respect pentru fiecare persoană.</p>
 <div class="hero-actions">
-<a class="button button-dark" href="#articole"><span data-cms="hero_cta_articles">Explorează articolele</span> <span aria-hidden="true">↗</span></a>
-<a class="text-link" href="#despre"><span data-cms="hero_cta_about">Despre mine</span> <span aria-hidden="true">→</span></a>
+<a class="button button-dark" href="#despre"><span data-cms="hero_cta_articles">Explorează articolele</span> <span aria-hidden="true" data-cms="hero_cta_articles_symbol">↗</span></a>
+<a class="text-link" href="#ofer"><span data-cms="hero_cta_about">Despre mine</span> <span aria-hidden="true" data-cms="hero_cta_about_symbol">→</span></a>
 </div>
 <div class="hero-note" data-cms="hero_note"><span class="note-dot"></span> Educație pentru sănătate, fără promisiuni miraculoase.</div>
 </div>
 <div class="hero-photo-wrap">
-<img alt="Portret profesional în bibliotecă" class="hero-photo" data-cms-image="hero_image" loading="eager" src="assets/fotografie-principala.jpg"/>
+<img alt="Portret profesional în bibliotecă" data-cms-alt="hero_photo_alt" class="hero-photo" data-cms-image="hero_image" loading="eager" src="assets/fotografie-principala.jpg"/>
 </div>
 </section>
 <section class="intro-strip">
 <p data-cms="intro">Un loc pentru informații <strong>responsabile</strong>, explicații pe înțeles și resurse care susțin conversațiile cu specialiștii.</p>
-<span class="strip-symbol">✳</span>
+<span class="strip-symbol" data-cms="intro_symbol">✳</span>
 </section>
 <section class="section about-grid" id="despre">
 <div class="section-label"><span>01 / DESPRE MINE</span><span class="label-line"></span></div>
@@ -48,7 +48,7 @@
 <p class="body-large" data-cms="about_intro">Sunt Dr. Andreea-Cristina Gheorghe, medic rezident în psihiatrie pediatrică. Am creat acest spațiu pentru a aduce mai aproape informațiile medicale relevante și pentru a face loc unor discuții echilibrate despre sănătate.</p>
 <p data-cms="about_description">Îmi doresc ca materialele publicate aici să fie accesibile, să distingă între dovezi și mituri și să încurajeze decizii informate, luate împreună cu profesioniștii potriviți.</p>
 <div class="signature" data-cms="about_signature">Cu grijă și curiozitate <span>✳</span></div>
-<div class="about-photo-wrap"><img alt="Fotografie profesională de la absolvire" data-cms-image="about_image" loading="lazy" src="assets/fotografie-despre-mine.jpg"/></div>
+<div class="about-photo-wrap"><img alt="Fotografie profesională de la absolvire" data-cms-alt="about_photo_alt" data-cms-image="about_image" loading="lazy" src="assets/fotografie-despre-mine.jpg"/></div>
 </div>
 </section>
 <section class="section editable-section" id="parcurs"><div class="section-label"><span>02 / PARCURS PROFESIONAL</span><span class="label-line"></span></div><div class="editable-content" data-section-content="parcurs"></div></section>
@@ -64,9 +64,9 @@
 <div class="contact-grid">
 <div><p class="eyebrow" data-cms="contact_eyebrow">Să păstrăm legătura</p><h2 data-cms="contact_title">Ai o întrebare<br/><em>despre site?</em></h2><p class="contact-copy" data-cms="contact_description">Pentru colaborări sau întrebări administrative, poți folosi datele de contact de mai jos. Completează-le înainte de publicarea site-ului.</p></div>
 <div class="contact-box"><div id="contact-form"></div>
-<div class="contact-row"><span class="contact-icon">✉</span><div><small data-cms="contact_label_email">E-MAIL</small><a href="mailto:adresa-ta@example.com" id="emailLink">adresa-ta@example.com</a></div></div>
-<div class="contact-row"><span class="contact-icon">↗</span><div><small data-cms="contact_label_whatsapp">WHATSAPP</small><a href="#" id="whatsappLink">Adaugă numărul de contact</a></div></div>
-<div class="contact-row"><span class="contact-icon">◎</span><div><small data-cms="contact_label_instagram">INSTAGRAM</small><a href="#" id="instagramLink">@dr.andreeacristinagh</a></div></div>
+<div class="contact-row"><span class="contact-icon" data-cms="contact_icon_email">✉</span><div><small data-cms="contact_label_email">E-MAIL</small><a href="mailto:adresa-ta@example.com" id="emailLink">adresa-ta@example.com</a></div></div>
+<div class="contact-row"><span class="contact-icon" data-cms="contact_icon_whatsapp">↗</span><div><small data-cms="contact_label_whatsapp">WHATSAPP</small><a href="#" id="whatsappLink">Adaugă numărul de contact</a></div></div>
+<div class="contact-row"><span class="contact-icon" data-cms="contact_icon_instagram">◎</span><div><small data-cms="contact_label_instagram">INSTAGRAM</small><a href="#" id="instagramLink">@dr.andreeacristinagh</a></div></div>
 <p class="contact-disclaimer" data-cms="disclaimer">Acest site are scop informativ și educațional. Conținutul său nu înlocuiește evaluarea medicală, diagnosticul sau recomandările individualizate ale unui profesionist.</p>
 </div>
 </div>
@@ -74,7 +74,7 @@
 </main>
 <footer class="site-footer">
 <a class="brand footer-brand" href="#acasa"><span class="brand-mark"><img src="assets/logo-concept-5.png" alt="" width="42" height="42"></span><span class="brand-text"><strong>Dr. Andreea-Cristina Gheorghe</strong><small>Medicină · educație · sănătate</small></span></a>
-<p>© <span id="year"></span> · <span data-cms="footer_rights">Toate drepturile rezervate</span></p>
+<p><span data-cms="footer_copyright_symbol">©</span> <span id="year"></span> · <span data-cms="footer_rights">Toate drepturile rezervate</span></p>
 <div class="footer-links"><a href="privacy.html"><span data-cms="footer_privacy">Confidențialitate</span></a><a href="#acasa" data-cms="footer_top">Înapoi sus ↑</a></div>
 </footer>
 <script src="assets/script.js"></script>
