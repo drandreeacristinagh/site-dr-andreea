@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-
 <html lang="ro">
 <head>
 <meta charset="utf-8"/>
@@ -9,19 +8,103 @@
 <meta content="#f7f5f0" name="theme-color"/>
 <title>Dr. Andreea-Cristina Gheorghe | Psihiatrie &amp; educație pentru sănătate</title>
 <link href="assets/styles.css" rel="stylesheet"/>
-<link rel="icon" type="image/png" href="assets/favicon-logo.png">
+<link rel="icon" type="image/png" href="assets/favicon-logo.png"/>
+
+<style>
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+.contact-detail {
+  display: grid;
+  grid-template-columns: 38px 88px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(70,70,70,.12);
+}
+.contact-detail:last-child { border-bottom: 0; }
+.contact-detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(70,70,70,.055);
+  color: #4d514c;
+}
+.contact-detail-icon svg {
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+.contact-detail-label {
+  font-size: .88rem;
+  font-weight: 700;
+}
+.contact-detail-value {
+  min-width: 0;
+  font-size: .88rem;
+  overflow-wrap: anywhere;
+}
+.contact-detail-value a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(70,70,70,.3);
+}
+.contact-detail-value a:hover {
+  border-bottom-color: currentColor;
+}
+.contact-detail-value a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+.contact-form-only { min-width: 0; }
+@media (max-width: 480px) {
+  .contact-detail {
+    grid-template-columns: 31px 75px minmax(0,1fr);
+    gap: 9px;
+  }
+  .contact-detail-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-detail-label,
+  .contact-detail-value {
+    font-size: .8rem;
+  }
+}
+</style>
 </head>
 <body>
+
 <a class="skip-link" href="#main" data-cms="skip_link">Sari la conținut</a>
+
 <header class="site-header">
 <a aria-label="Pagina principală" data-cms-aria="brand_home_aria" class="brand" href="#acasa">
 <span class="brand-mark"><img src="assets/logo-concept-5.png" alt="" width="42" height="42"></span>
 <span class="brand-text"><strong>Dr. Andreea-Cristina Gheorghe</strong><small>Medicină · educație · sănătate</small></span>
 </a>
 <button aria-expanded="false" aria-label="Deschide meniul" data-cms-aria="menu_open_aria" class="menu-toggle">☰</button>
-<nav aria-label="Navigare principală" data-cms-aria="nav_aria" class="nav"><a href="#despre" data-nav="despre">Despre mine</a><a href="#parcurs" data-nav="parcurs">Parcurs profesional</a><a href="#arii" data-nav="arii">Domenii de interes</a><a href="#ofer" data-nav="ofer">Ce ofer</a><a href="#tarife" data-nav="tarife">Servicii și tarife</a><a href="#colaborare" data-nav="colaborare">Colaborare</a><a href="#articole" data-nav="articole">Articole</a><a href="#resurse" data-nav="resurse">Resurse</a><a href="#faq" data-nav="faq">Întrebări frecvente</a><a class="nav-cta" href="#contact" data-nav="contact">Contact</a></nav>
+<nav aria-label="Navigare principală" data-cms-aria="nav_aria" class="nav">
+<a href="#despre" data-nav="despre">Despre mine</a>
+<a href="#parcurs" data-nav="parcurs">Parcurs profesional</a>
+<a href="#arii" data-nav="arii">Domenii de interes</a>
+<a href="#ofer" data-nav="ofer">Ce ofer</a>
+<a href="#tarife" data-nav="tarife">Servicii și tarife</a>
+<a href="#colaborare" data-nav="colaborare">Colaborare</a>
+<a href="#articole" data-nav="articole">Articole</a>
+<a href="#resurse" data-nav="resurse">Resurse</a>
+<a href="#faq" data-nav="faq">Întrebări frecvente</a>
+<a class="nav-cta" href="#contact" data-nav="contact">Contact</a>
+</nav>
 </header>
+
 <main id="main">
+
 <section class="hero section" id="acasa">
 <div class="hero-copy">
 <p class="eyebrow" data-cms="hero_eyebrow"><span class="eyebrow-line"></span> Un spațiu de informare bazat pe dovezi</p>
@@ -37,10 +120,12 @@
 <img alt="Portret profesional în bibliotecă" data-cms-alt="hero_photo_alt" class="hero-photo" data-cms-image="hero_image" loading="eager" src="assets/fotografie-principala.jpg"/>
 </div>
 </section>
+
 <section class="intro-strip">
 <p data-cms="intro">Un loc pentru informații <strong>responsabile</strong>, explicații pe înțeles și resurse care susțin conversațiile cu specialiștii.</p>
 <span class="strip-symbol" data-cms="intro_symbol">✳</span>
 </section>
+
 <section class="section about-grid" id="despre">
 <div class="section-label"><span>01 / DESPRE MINE</span><span class="label-line"></span></div>
 <div class="about-content">
@@ -52,32 +137,129 @@
 <div class="about-photo-wrap"><img alt="Fotografie profesională de la absolvire" data-cms-alt="about_photo_alt" data-cms-image="about_image" loading="lazy" src="assets/fotografie-despre-mine.jpg"/></div>
 </div>
 </section>
+
 <section class="section editable-section" id="parcurs"><div class="section-label"><span>02 / PARCURS PROFESIONAL</span><span class="label-line"></span></div><div class="editable-content" data-section-content="parcurs"></div></section>
 <section class="section focus-section editable-section" id="arii"><div class="section-label"><span>03 / DOMENII DE INTERES</span><span class="label-line"></span></div><div class="editable-content" data-section-content="arii"></div></section>
 <section class="section editable-section" id="ofer"><div class="section-label"><span>04 / CE OFER</span><span class="label-line"></span></div><div class="editable-content" data-section-content="ofer"></div></section>
 <section class="section editable-section" id="tarife"><div class="section-label"><span>05 / SERVICII ȘI TARIFE</span><span class="label-line"></span></div><div class="editable-content" data-section-content="tarife"></div></section>
 <section class="section editable-section" id="colaborare"><div class="section-label"><span>06 / CUM DECURGE COLABORAREA</span><span class="label-line"></span></div><div class="editable-content" data-section-content="colaborare"></div></section>
-<section class="section editable-section" id="articole"><div class="section-label"><span>05 / ARTICOLE</span><span class="label-line"></span></div><div class="editable-content" data-section-content="articole"></div></section>
-<section class="section editable-section" id="resurse"><div class="section-label"><span>06 / RESURSE</span><span class="label-line"></span></div><div class="editable-content" data-section-content="resurse"></div></section>
+<section class="section editable-section" id="articole"><div class="section-label"><span>07 / ARTICOLE</span><span class="label-line"></span></div><div class="editable-content" data-section-content="articole"></div></section>
+<section class="section editable-section" id="resurse"><div class="section-label"><span>08 / RESURSE</span><span class="label-line"></span></div><div class="editable-content" data-section-content="resurse"></div></section>
 <section class="section editable-section" id="faq"><div class="section-label"><span>09 / ÎNTREBĂRI FRECVENTE</span><span class="label-line"></span></div><div class="editable-content" data-section-content="faq"></div></section>
+
 <section class="contact-section section" id="contact">
-<div class="section-label"><span>07 / CONTACT</span><span class="label-line"></span></div>
+<div class="section-label"><span>10 / CONTACT</span><span class="label-line"></span></div>
+
 <div class="contact-grid">
-<div><p class="eyebrow" data-cms="contact_eyebrow">Să păstrăm legătura</p><h2 data-cms="contact_title">Ai o întrebare<br/><em>despre site?</em></h2><p class="contact-copy" data-cms="contact_description">Pentru colaborări sau întrebări administrative, poți folosi datele de contact de mai jos. Completează-le înainte de publicarea site-ului.</p></div>
-<div class="contact-box"><div id="contact-form"></div>
-<div class="contact-row"><span class="contact-icon" data-cms="contact_icon_email">✉</span><div><small data-cms="contact_label_email">E-MAIL</small><a href="mailto:adresa-ta@example.com" id="emailLink">adresa-ta@example.com</a></div></div>
-<div class="contact-row"><span class="contact-icon" data-cms="contact_icon_whatsapp">↗</span><div><small data-cms="contact_label_whatsapp">WHATSAPP</small><a href="#" id="whatsappLink">Adaugă numărul de contact</a></div></div>
-<div class="contact-row"><span class="contact-icon" data-cms="contact_icon_instagram">◎</span><div><small data-cms="contact_label_instagram">INSTAGRAM</small><a href="#" id="instagramLink">@dr.andreeacristinagh</a></div></div>
+
+<div class="contact-information">
+<p class="eyebrow" data-cms="contact_eyebrow">Să păstrăm legătura</p>
+<h2 data-cms="contact_title">Trimite-mi un mesaj<br/><em>și povestim cu drag!</em></h2>
+<p class="contact-copy" data-cms="contact_description">Trimite o solicitare scurtă. Nu include informații medicale sau alte date sensibile în acest formular.</p>
+
+<div class="contact-details">
+
+<div class="contact-detail">
+<span class="contact-detail-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<rect x="3" y="4" width="18" height="13" rx="2"/>
+<path d="M2 20h20M8 20l1-3m7 3-1-3"/>
+</svg>
+</span>
+<span class="contact-detail-label">Format</span>
+<span class="contact-detail-value">Online</span>
+</div>
+
+<div class="contact-detail">
+<span class="contact-detail-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+</span>
+<span class="contact-detail-label" data-cms="contact_label_email">Email</span>
+<span class="contact-detail-value"><a id="emailLink" href="mailto:dr.andreeacristinagh@gmail.com">dr.andreeacristinagh@gmail.com</a></span>
+</div>
+
+<div class="contact-detail">
+<span class="contact-detail-icon" aria-hidden="true" style="color:#25a85a">
+<svg viewBox="0 0 32 32" fill="currentColor">
+<path d="M16.02 2.67A13.3 13.3 0 0 0 4.53 22.7L2.67 29.33l6.8-1.78A13.33 13.33 0 1 0 16.02 2.67Zm0 24.22a10.8 10.8 0 0 1-5.5-1.5l-.4-.24-4.03 1.05 1.08-3.92-.26-.41a10.86 10.86 0 1 1 9.11 5.02Zm5.96-8.1c-.33-.17-1.95-.96-2.25-1.07-.3-.11-.52-.17-.74.17-.22.33-.85 1.07-1.04 1.29-.19.22-.38.25-.71.08-.33-.16-1.4-.52-2.67-1.65-.99-.88-1.66-1.97-1.85-2.3-.19-.33-.02-.51.14-.67.15-.15.33-.39.5-.58.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.58-.08-.16-.74-1.79-1.01-2.45-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.15 1.13-1.15 2.75s1.18 3.19 1.35 3.41c.16.22 2.32 3.54 5.62 4.97.79.34 1.41.54 1.9.69.8.25 1.53.21 2.1.13.64-.1 1.95-.8 2.23-1.57.28-.77.28-1.43.19-1.57-.08-.14-.3-.22-.63-.39Z"/>
+</svg>
+</span>
+<span class="contact-detail-label" data-cms="contact_label_whatsapp">WhatsApp</span>
+<span class="contact-detail-value"><a id="whatsappLink" href="https://wa.me/message/UUF2B3FQUOS6E1" target="_blank" rel="noopener noreferrer">Scrie-mi pe WhatsApp</a></span>
+</div>
+
+<div class="contact-detail">
+<span class="contact-detail-icon" aria-hidden="true" style="color:#0a66c2">
+<svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.89a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.86H15.8V14.1c0-1.11-.02-2.53-1.54-2.53-1.54 0-1.78 1.2-1.78 2.45v4.73H9.53V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.98 0 3.56 1.96 3.56 4.51v5.26Z"/>
+</svg>
+</span>
+<span class="contact-detail-label">LinkedIn</span>
+<span class="contact-detail-value"><a href="https://www.linkedin.com/in/andreeacristinagheorghe/" target="_blank" rel="noopener noreferrer">andreeacristinagheorghe</a></span>
+</div>
+
+<div class="contact-detail">
+<span class="contact-detail-icon" aria-hidden="true" style="color:#1877f2">
+<svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.5-3.9 3.78-3.9 1.1 0 2.25.2 2.25.2v2.47H15.2c-1.25 0-1.64.77-1.64 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/>
+</svg>
+</span>
+<span class="contact-detail-label">Facebook</span>
+<span class="contact-detail-value"><a href="https://www.facebook.com/dr.andreeacristinaghpsihiatriepediatricanutritie" target="_blank" rel="noopener noreferrer">Dr. Andreea-Cristina Gheorghe</a></span>
+</div>
+
+<div class="contact-detail">
+<span class="contact-detail-icon" aria-hidden="true" style="color:#c13584">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="2" y="2" width="20" height="20" rx="5"/>
+<circle cx="12" cy="12" r="4"/>
+<circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+</svg>
+</span>
+<span class="contact-detail-label" data-cms="contact_label_instagram">Instagram</span>
+<span class="contact-detail-value"><a id="instagramLink" href="https://www.instagram.com/dr.andreeacristinagh/" target="_blank" rel="noopener noreferrer">@dr.andreeacristinagh</a></span>
+</div>
+
+<div class="contact-detail">
+<span class="contact-detail-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M16.7 2h-3.1v13.05a3.13 3.13 0 1 1-2.7-3.1V8.8a6.29 6.29 0 1 0 5.8 6.25V8.1a8.3 8.3 0 0 0 4.8 1.55V6.5A5.12 5.12 0 0 1 16.7 2Z"/>
+</svg>
+</span>
+<span class="contact-detail-label">TikTok</span>
+<span class="contact-detail-value"><a href="https://www.tiktok.com/@dr.andreeacristinagh" target="_blank" rel="noopener noreferrer">@dr.andreeacristinagh</a></span>
+</div>
+
+</div>
+</div>
+
+<div class="contact-box contact-form-only">
+<div id="contact-form"></div>
 <p class="contact-disclaimer" data-cms="disclaimer">Acest site are scop informativ și educațional. Conținutul său nu înlocuiește evaluarea medicală, diagnosticul sau recomandările individualizate ale unui profesionist.</p>
 </div>
+
 </div>
 </section>
 </main>
+
 <footer class="site-footer">
-<a class="brand footer-brand" href="#acasa"><span class="brand-mark"><img src="assets/logo-concept-5.png" alt="" width="42" height="42"></span><span class="brand-text"><strong>Dr. Andreea-Cristina Gheorghe</strong><small>Medicină · educație · sănătate</small></span></a>
+<a class="brand footer-brand" href="#acasa">
+<span class="brand-mark"><img src="assets/logo-concept-5.png" alt="" width="42" height="42"></span>
+<span class="brand-text"><strong>Dr. Andreea-Cristina Gheorghe</strong><small>Medicină · educație · sănătate</small></span>
+</a>
 <p><span data-cms="footer_copyright_symbol">©</span> <span id="year"></span> · <span data-cms="footer_rights">Toate drepturile rezervate</span></p>
-<div class="footer-links"><a href="privacy.html"><span data-cms="footer_privacy">Politica de confidențialitate</span></a><a href="terms.html">Termeni și condiții</a><a href="#acasa" data-cms="footer_top">Înapoi sus ↑</a></div>
+<div class="footer-links">
+<a href="privacy.html"><span data-cms="footer_privacy">Politica de confidențialitate</span></a>
+<a href="terms.html">Termeni și condiții</a>
+<a href="#acasa" data-cms="footer_top">Înapoi sus ↑</a>
+</div>
 </footer>
+
 <script src="assets/script.js"></script>
-<script defer src="assets/editor-render.js"></script><script defer src="assets/extra-render.js"></script></body>
+<script defer src="assets/editor-render.js"></script>
+<script defer src="assets/extra-render.js"></script>
+</body>
 </html>
