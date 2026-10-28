@@ -1,45 +1,45 @@
 {
   "eyebrow": "INFORMAȚII LEGALE",
   "title": "Politica de confidențialitate",
-  "updated": "26 octombrie 2026",
-  "intro": "Respectarea vieții private este importantă. Această pagină explică ce date personale pot fi prelucrate atunci când vizitezi site-ul sau alegi să mă contactezi. Informațiile de mai jos privesc site-ul de prezentare și nu constituie o informare pentru eventuale servicii desfășurate prin alte platforme.",
+  "updated": "29 octombrie 2026",
+  "intro": "Această politică explică modul în care sunt colectate, utilizate și protejate datele personale atunci când vizitezi site-ul, trimiți un mesaj prin formularul de contact sau completezi ulterior un formular preliminar pentru serviciile de educație nutrițională și psihoeducație. Prelucrarea se realizează conform Regulamentului (UE) 2016/679 (GDPR) și legislației aplicabile.",
   "sections": [
     {
-      "title": "1. Cine răspunde de prelucrarea datelor",
-      "body": "Pentru mesajele trimise prin datele de contact afișate pe acest site: Dr. Andreea-Cristina Gheorghe. Contact pentru întrebări privind datele personale: dr.andreeacristinagh@gmail.com.\n\nÎn funcție de natura unei colaborări sau a unui serviciu prestat, identitatea completă a operatorului și informarea specifică pot fi comunicate separat. Datele de identificare profesională și fiscală, dacă sunt necesare pentru activitatea desfășurată, trebuie completate înainte de folosirea acestei pagini ca politică finală."
+      "title": "1. Operatorul datelor cu caracter personal",
+      "body": "Operator: GHEORGHE MARIANA ANDREEA-CRISTINA PERSOANĂ FIZICĂ AUTORIZATĂ (PFA), CUI 55343901, nr. Registrul Comerțului F2026038116009, reprezentată de Dr. Andreea-Cristina Gheorghe.\n\nContact pentru protecția datelor: dr.andreeacristinagh@gmail.com."
     },
     {
-      "title": "2. Ce date pot fi prelucrate",
-      "body": "Dacă îmi scrii prin e-mail, WhatsApp sau Instagram, pot primi numele sau identificatorul tău, datele de contact și informațiile pe care alegi să le incluzi în mesaj.\n\nLa accesarea site-ului, furnizorul de găzduire poate prelucra date tehnice, precum adresa IP, momentul accesării și informații necesare securității și funcționării serviciului. Nu există un formular de colectare a datelor medicale pe acest site."
+      "title": "2. Ce date personale pot fi prelucrate",
+      "body": "Prin formularul de contact al site-ului, gestionat prin Formspree, pot primi numele, adresa de e-mail, numărul de telefon (dacă este completat), serviciul și tema de interes, persoana pentru care este solicitat serviciul și conținutul mesajului.\n\nDacă îți transmit ulterior un formular Google Forms pentru pregătirea întâlnirii, acesta poate colecta date de identificare și contact, vârstă, informații despre alimentație, obiective, înălțime, greutate și, atunci când este necesar, informații privind sănătatea, diagnosticele, medicația, alergiile sau dificultățile alimentare. În cazul unui minor, pot fi colectate date despre acesta și despre părintele sau reprezentantul legal.\n\nComunicarea prin e-mail, WhatsApp sau Instagram poate implica date de contact și conținutul mesajelor. La accesarea site-ului, furnizorii tehnici pot prelucra adresa IP și informații necesare funcționării și securității."
     },
     {
-      "title": "3. Scopuri și temeiuri",
-      "body": "Folosesc datele din mesajele primite pentru a răspunde solicitărilor și, după caz, pentru a comunica informații administrative despre activitățile educaționale. Temeiul poate fi interesul legitim de a răspunde corespondenței sau demersurile făcute la cererea ta înainte de încheierea unui contract, în funcție de solicitare.\n\nDatele tehnice prelucrate pentru funcționarea și securitatea site-ului pot avea ca temei interesul legitim al furnizorului sau al operatorului, în condițiile aplicabile. Pentru alte scopuri, dacă vor fi introduse, informarea va fi actualizată."
+      "title": "3. Scopuri și temeiuri juridice",
+      "body": "Datele sunt utilizate pentru a răspunde solicitărilor, a analiza adecvarea serviciilor educaționale, a pregăti și organiza întâlniri, a comunica pe durata colaborării, a îndeplini obligațiile contractuale și fiscale și a asigura securitatea site-ului.\n\nÎn funcție de situație, temeiurile pentru datele obișnuite sunt art. 6 alin. (1) lit. b) GDPR (demersuri precontractuale sau executarea contractului), lit. c) (obligații legale), lit. f) (interes legitim, inclusiv gestionarea corespondenței și securitatea site-ului) sau lit. a) (consimțământ, atunci când acesta este aplicabil).\n\nPentru datele privind sănătatea este necesară și îndeplinirea unei condiții din art. 9 GDPR. Atunci când se utilizează consimțământul explicit prevăzut de art. 9 alin. (2) lit. a), acesta va fi solicitat distinct înainte de colectarea datelor respective."
     },
     {
-      "title": "4. Date despre sănătate și mesaje sensibile",
-      "body": "Te rog să nu trimiți prin canalele generale de contact documente medicale, diagnostice sau alte informații sensibile, decât dacă există un canal și o informare adecvate scopului respectiv. Acest site nu oferă consultații medicale și nu este destinat urgențelor."
+      "title": "4. Date privind sănătatea și minori",
+      "body": "Te rog să nu transmiți documente medicale sau informații sensibile detaliate prin formularul general de contact. Dacă este necesară colectarea unor informații despre sănătate pentru pregătirea unei întâlniri, acestea vor fi solicitate printr-un formular dedicat, cu informarea și mecanismul de consimțământ adecvate.\n\nPentru solicitările referitoare la copii și adolescenți, formularul preliminar trebuie completat de un părinte sau reprezentant legal. Sunt solicitate numai datele relevante pentru scopul declarat.\n\nServiciile oferite prin PFA au caracter educațional și informativ; nu reprezintă consultații medicale și nu înlocuiesc diagnosticul sau tratamentul medical. Site-ul și formularele nu sunt destinate urgențelor."
     },
     {
-      "title": "5. Destinatari și servicii externe",
-      "body": "Site-ul este găzduit prin Cloudflare Pages. Dacă alegi să folosești linkurile către WhatsApp sau Instagram, prelucrarea datelor de către aceste servicii este supusă și propriilor politici de confidențialitate. Comunicarea prin e-mail implică furnizorii serviciilor de e-mail folosite de expeditor și destinatar.\n\nNu public datele primite în mesaje și nu le folosesc pentru liste de marketing fără un temei adecvat. Posibilele transferuri internaționale efectuate de furnizorii externi trebuie analizate potrivit documentației acestora."
+      "title": "5. Destinatari și furnizori externi",
+      "body": "Site-ul este găzduit prin Cloudflare Pages. Formularul de contact utilizează Formspree. Formularele preliminare pot fi gestionate prin Google Forms, iar răspunsurile pot fi stocate în serviciile Google asociate, inclusiv Google Drive. Comunicarea poate implica furnizori de e-mail, WhatsApp și Instagram, în funcție de canalul ales.\n\nDatele pot fi accesibile furnizorilor în limitele rolurilor și condițiilor contractuale aplicabile. Nu vând datele personale și nu le folosesc pentru marketing nesolicitat.\n\nUnii furnizori pot implica transferuri în afara Spațiului Economic European. Acestea trebuie să respecte mecanismele legale aplicabile, precum deciziile de adecvare sau garanțiile corespunzătoare. Pentru detalii suplimentare, mă poți contacta prin e-mail."
     },
     {
       "title": "6. Cât timp sunt păstrate datele",
-      "body": "Mesajele și datele de contact sunt păstrate numai atât timp cât este necesar pentru gestionarea solicitării și pentru eventuale obligații legale sau apărarea unor drepturi. Duratele concrete și regulile de ștergere trebuie stabilite și verificate înainte de publicarea politicii ca versiune finală. Datele tehnice gestionate de furnizorii externi urmează propriile politici de retenție."
+      "body": "Datele sunt păstrate numai cât timp sunt necesare scopurilor pentru care au fost colectate, ținând cont de natura lor, de existența unei colaborări și de obligațiile legale aplicabile.\n\nSolicitările care nu conduc la o colaborare și informațiile sensibile care nu mai sunt necesare sunt eliminate potrivit regulilor de retenție aplicabile. Datele utilizate în cadrul unei colaborări pot fi păstrate pe durata acesteia și ulterior, dacă există un temei legal justificat. Documentele contractuale, fiscale și contabile sunt păstrate conform termenelor legale aplicabile.\n\nCând păstrarea nu mai este justificată, datele sunt șterse sau anonimizate. Pentru detalii despre perioada aplicabilă unei categorii de date ori criteriile de stabilire a acesteia, mă poți contacta prin e-mail."
     },
     {
-      "title": "7. Cookie-uri și statistici",
-      "body": "În versiunea actuală a site-ului nu am configurat intenționat instrumente proprii de publicitate comportamentală sau analiză a vizitatorilor. Furnizorul de găzduire ori serviciile externe accesate prin linkuri pot folosi tehnologii și date tehnice conform propriilor politici. Dacă voi introduce instrumente de analiză, formulare sau alte cookie-uri neesențiale, voi actualiza această pagină și voi implementa, unde este necesar, mecanisme de consimțământ."
+      "title": "7. Cookie-uri și date tehnice",
+      "body": "În configurația actuală a site-ului nu am introdus intenționat instrumente proprii de publicitate comportamentală sau profilare. Furnizorii tehnici pot utiliza date și tehnologii necesare funcționării și securității serviciilor.\n\nDacă vor fi introduse instrumente de analiză, publicitate sau cookie-uri neesențiale, această politică va fi actualizată și, când legea impune, va fi solicitat consimțământul înainte de utilizarea lor."
     },
     {
       "title": "8. Drepturile tale",
-      "body": "În condițiile Regulamentului (UE) 2016/679 (GDPR), poți solicita acces la date, rectificarea sau ștergerea lor, restricționarea prelucrării, opoziția la anumite prelucrări și, când sunt îndeplinite condițiile, portabilitatea datelor. Dacă o prelucrare se bazează pe consimțământ, acesta poate fi retras fără a afecta legalitatea prelucrării anterioare.\n\nPentru solicitări, scrie la dr.andreeacristinagh@gmail.com. Ai și dreptul să depui o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP): www.dataprotection.ro."
+      "body": "În condițiile GDPR, poți solicita accesul la date, rectificarea, ștergerea sau restricționarea prelucrării, te poți opune anumitor prelucrări și poți solicita portabilitatea datelor când sunt îndeplinite condițiile legale. Dacă prelucrarea se bazează pe consimțământ, îl poți retrage oricând, fără a afecta legalitatea prelucrării anterioare.\n\nPentru exercitarea drepturilor, scrie la dr.andreeacristinagh@gmail.com. Poți depune o plângere și la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP): www.dataprotection.ro."
     },
     {
       "title": "9. Modificări ale politicii",
-      "body": "Pot actualiza această politică atunci când se schimbă funcționalitățile site-ului, furnizorii utilizați sau obligațiile aplicabile. Versiunea curentă și data ultimei actualizări vor fi afișate pe această pagină."
+      "body": "Această politică poate fi actualizată când se schimbă serviciile, formularele, furnizorii sau cerințele legale. Versiunea actualizată și data ultimei modificări vor fi afișate pe această pagină. Pentru anumite formulare sau servicii pot fi furnizate informări suplimentare."
     }
   ],
-  "footer_note": "Această politică privește site-ul de prezentare. Pentru activități desfășurate prin alte platforme se pot aplica informări suplimentare."
+  "footer_note": "Pentru formularele care solicită informații privind sănătatea pot fi furnizate informări suplimentare și solicitat consimțământul explicit, atunci când acesta constituie condiția legală aplicabilă."
 }
