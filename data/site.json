@@ -364,7 +364,7 @@
     "next": "Continuă",
     "send": "Trimite mesajul",
     "no_health": "Nu introduce diagnostice, tratamente sau alte informații medicale în acest formular.",
-    "review": "Verifică solicitarea înainte de a deschide e-mailul. Trimiterea se finalizează în aplicația ta de e-mail.",
+    "review": "Verifică informațiile introduse înainte de trimitere. După apăsarea butonului „Trimite mesajul”, solicitarea va fi transmisă prin formularul online.",
     "recipient_options": [
       "Pentru mine",
       "Pentru copilul meu",
