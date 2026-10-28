@@ -373,7 +373,7 @@
     "service": "Serviciul dorit",
     "privacy_link": "Citește politica de confidențialitate",
     "select_placeholder": "Selectează o opțiune",
-    "submit_note": "Apăsarea butonului deschide aplicația de e-mail; mesajul nu este trimis automat.",
+    "submit_note": "Prin apăsarea butonului „Trimite mesajul”, solicitarea este transmisă direct prin formularul online. După trimitere, vei primi o confirmare pe această pagină.",
     "topic_placeholder": "Selectează mai întâi un serviciu",
     "required_note": "Câmpurile marcate cu * sunt obligatorii."
   },
