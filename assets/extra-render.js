@@ -1,3 +1,4 @@
+
 (async function(){
 const d=await fetch('data/site.json',{cache:'no-store'}).then(r=>r.json());
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
@@ -29,7 +30,7 @@ const message=make(lab.message||'Mesaj (opțional)','textarea');message.rows=5;
 add(form,'p','form-help',lab.no_health||'');
 const consent=add(form,'label','form-consent');const checkbox=add(consent,'input');checkbox.type='checkbox';checkbox.required=true;add(consent,'span','',lab.privacy||'Am citit politica de confidențialitate.');
 const privacy=add(form,'a','text-link',lab.privacy_link||d.footer_privacy||'Confidențialitate');privacy.href='privacy.html';privacy.target='_blank';privacy.rel='noopener noreferrer';
-add(form,'p','form-help','Prin apăsarea butonului, solicitarea este transmisă prin formularul online, fără a deschide aplicația de e-mail.');
+add(form,'p','form-help','Solicitarea ta va fi transmisă direct prin formularul online. După trimitere, vei primi o confirmare pe această pagină.');
 const send=add(form,'button','button button-dark','Trimite mesajul');send.type='submit';
 const status=add(form,'p','form-help','');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
 form.addEventListener('submit',async event=>{
