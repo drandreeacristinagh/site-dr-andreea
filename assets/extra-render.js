@@ -14,7 +14,7 @@ const hero=document.querySelector('.hero-photo');if(hero && /^\d{1,3}% \d{1,3}%$
 const target=document.getElementById('contact-form');if(!target)return;
 const lab=d.form_labels||{}, form=add(target,'form','site-form');form.noValidate=false;
 add(form,'h3','',d.form_title);add(form,'p','form-help',d.form_intro);add(form,'p','form-help',lab.required_note||'');
-const make=(title,tag,required=false)=>{const label=add(form,'label','form-field');const caption=add(label,'span','',title+(required?' *':''));const input=add(label,tag,'');input.required=required;return input};
+const make=(title,tag,required=false)=>{const label=add(form,'label','form-field');add(label,'span','',title+(required?' *':''));const input=add(label,tag,'');input.required=required;return input};
 const option=(select,value,label)=>{const o=add(select,'option','',label);o.value=value;return o};
 const service=make(lab.service||'Serviciu','select',true);option(service,'',lab.select_placeholder||'Selectează');
 for(const x of d.form_services||[])option(service,x.value,x.label);
@@ -29,10 +29,40 @@ const message=make(lab.message||'Mesaj (opțional)','textarea');message.rows=5;
 add(form,'p','form-help',lab.no_health||'');
 const consent=add(form,'label','form-consent');const checkbox=add(consent,'input');checkbox.type='checkbox';checkbox.required=true;add(consent,'span','',lab.privacy||'Am citit politica de confidențialitate.');
 const privacy=add(form,'a','text-link',lab.privacy_link||d.footer_privacy||'Confidențialitate');privacy.href='privacy.html';privacy.target='_blank';privacy.rel='noopener noreferrer';
-add(form,'p','form-help',lab.submit_note||'');const send=add(form,'button','button button-dark',lab.send||'Deschide e-mailul');send.type='submit';
-form.addEventListener('submit',event=>{event.preventDefault();if(!form.reportValidity())return;
-const subject=(d.form_email_subject||'Solicitare – ')+service.value;
-const body=[[d.form_review_service||'Serviciu',service.options[service.selectedIndex]?.text||service.value],[d.form_review_topic||'Temă',topic.value],[d.form_review_recipient||'Pentru',recipient.value],[d.form_review_name||'Nume',name.value],[d.form_review_email||'E-mail',email.value],[d.form_review_phone||'Telefon',phone.value],[d.form_review_message||'Mesaj',message.value]].map(([key,value])=>key+': '+value).join('\n');
-window.location.href='mailto:'+encodeURIComponent(d.contact_email||'')+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+add(form,'p','form-help','Prin apăsarea butonului, solicitarea este transmisă prin formularul online, fără a deschide aplicația de e-mail.');
+const send=add(form,'button','button button-dark','Trimite mesajul');send.type='submit';
+const status=add(form,'p','form-help','');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
+form.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(!form.reportValidity())return;
+  send.disabled=true;
+  status.textContent='Mesajul se trimite...';
+  const payload={
+    _subject:(d.form_email_subject||'Solicitare – ')+service.value,
+    serviciu:service.options[service.selectedIndex]?.text||service.value,
+    tema:topic.value,
+    pentru_cine:recipient.value,
+    nume:name.value,
+    email:email.value,
+    telefon:phone.value,
+    mesaj:message.value,
+    acord_confidentialitate:checkbox.checked?'Da':'Nu'
+  };
+  try{
+    const response=await fetch('https://formspree.io/f/mljjjoqr',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(payload)
+    });
+    if(!response.ok)throw new Error('Formspree HTTP '+response.status);
+    form.reset();
+    updateTopics();
+    status.textContent='Mesajul a fost trimis cu succes! Îți voi răspunde cât mai curând.';
+  }catch(error){
+    console.error('Eroare trimitere formular',error);
+    status.textContent='Mesajul nu a putut fi trimis. Te rog să încerci din nou sau să îmi scrii direct pe e-mail.';
+  }finally{
+    send.disabled=false;
+  }
 });
 })().catch(e=>console.error('Eroare încărcare secțiuni',e));
