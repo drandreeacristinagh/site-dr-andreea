@@ -56,7 +56,6 @@ function copySiteFiles() {
   }
 }
 
-// Stilurile noi se adaugă doar în copia publicată (dist), nu schimbă CSS-ul original.
 function addArticleCardStyles() {
   const css = `
 /* Articole: 3 coloane desktop, 2 tabletă, 1 telefon */
@@ -182,8 +181,23 @@ body { margin:0; background:#f7f5f0; color:#303c33; }
 .article-layout h1 { margin:0 0 18px; font-family:'Playfair Display',Georgia,serif; font-size:clamp(34px,5vw,59px); font-weight:500; line-height:1.16; letter-spacing:-.035em; }
 .article-layout .article-meta { display:block; margin:0 0 23px; font-size:13px; color:#617067; }
 .article-layout .article-summary { margin:0 0 30px; font-size:18px; line-height:1.8; color:#526157; }
-.article-cover { margin:0 0 43px; }
-.article-cover img { display:block; width:100%; max-height:470px; object-fit:cover; height:auto; aspect-ratio:16/9; border-radius:8px; }
+
+/* Coperta din articol: imagine completă, fără decupare */
+.article-cover {
+  margin: 0 0 43px;
+  text-align: center;
+}
+.article-cover img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 .article-layout .article-body { margin-top:0; font-size:16px; line-height:1.9; overflow-wrap:anywhere; }
 .article-body img { display:block; max-width:100%; height:auto; border-radius:8px; margin:24px auto; }
 .article-body h2, .bibliography h2 { font-family:'Playfair Display',Georgia,serif; font-weight:500; font-size:29px; margin:1.7em 0 .6em; }
