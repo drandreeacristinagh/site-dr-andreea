@@ -1,6 +1,8 @@
+
 media:
   input: assets
   output: /assets
+
 content:
 - name: site
   label: Textele și fotografiile site-ului
@@ -626,6 +628,7 @@ content:
   - name: professional_group_training
     label: Text editabil – professional_group_training
     type: string
+
 - name: privacy
   label: Confidențialitate – politica site-ului
   type: file
@@ -658,3 +661,59 @@ content:
   - name: footer_note
     label: Notă de subsol
     type: string
+
+- name: articole_individuale
+  label: Articole – pagini individuale
+  type: collection
+  path: content/articole
+  format: yaml-frontmatter
+  filename: "{primary}.md"
+  view:
+    fields: [title, date, category, published]
+    primary: title
+    sort: date
+    order: desc
+  fields:
+  - name: title
+    label: Titlul articolului
+    type: string
+    required: true
+  - name: summary
+    label: Rezumatul articolului
+    type: text
+    required: true
+  - name: category
+    label: Categoria articolului
+    type: string
+  - name: date
+    label: Data publicării
+    type: date
+  - name: author
+    label: Autor
+    type: string
+    default: Dr. Andreea-Cristina Gheorghe
+  - name: image
+    label: Imagine de copertă
+    type: image
+  - name: image_alt
+    label: Descrierea imaginii de copertă
+    type: string
+  - name: published
+    label: Publicat
+    type: boolean
+    default: false
+  - name: body
+    label: Conținutul articolului
+    type: rich-text
+    options:
+      format: markdown
+      switcher: true
+      rename: true
+  - name: bibliography
+    label: Bibliografie
+    type: rich-text
+    options:
+      format: markdown
+  - name: seo_description
+    label: Descriere SEO
+    type: text
