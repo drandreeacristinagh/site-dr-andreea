@@ -139,6 +139,16 @@
   "articles_empty": "Articolele vor fi disponibile în curând.",
   "resources_title": "Resurse",
   "resources_empty": "Resursele vor fi disponibile în curând.",
+  "resources": [
+    {
+      "title": "Test",
+      "category": "Teste",
+      "description": "sgsdhdfbd",
+      "image": "/assets/fotografie-despre-mine.jpg",
+      "url": "www.hdfhdb",
+      "published": true
+    }
+  ],
   "contact_eyebrow": "Să păstrăm legătura",
   "contact_title": "Trimite-mi un mesaj și povestim cu drag!",
   "contact_description": "Trimite o solicitare scurtă. Nu include informații medicale sau alte date sensibile în acest formular.",
