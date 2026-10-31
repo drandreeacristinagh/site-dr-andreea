@@ -139,16 +139,6 @@
   "articles_empty": "Articolele vor fi disponibile în curând.",
   "resources_title": "Resurse",
   "resources_empty": "Resursele vor fi disponibile în curând.",
-  "resources": [
-    {
-      "title": "Test",
-      "category": "Teste",
-      "description": "sgsdhdfbd",
-      "image": "/assets/fotografie-despre-mine.jpg",
-      "url": "www.hdfhdb",
-      "published": true
-    }
-  ],
   "contact_eyebrow": "Să păstrăm legătura",
   "contact_title": "Trimite-mi un mesaj și povestim cu drag!",
   "contact_description": "Trimite o solicitare scurtă. Nu include informații medicale sau alte date sensibile în acest formular.",
@@ -201,7 +191,7 @@
           "name": "Întâlnire individuală",
           "duration": "50 min",
           "price": "180 lei",
-          "description": "Discuție educațională individuală."
+          "description": "evaluare inițială · educație nutrițională · stabilirea obiectivelor · identificarea dificultăților · stabilirea obiectivelor · fără meniu personalizat"
         },
         {
           "name": "Întâlnire individuală cu plan personalizat",
