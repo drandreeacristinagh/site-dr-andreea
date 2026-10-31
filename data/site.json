@@ -196,7 +196,7 @@
         {
           "name": "Întâlnire individuală cu plan personalizat",
           "duration": "50 min + plan pe maximum 14 zile",
-          "price": "350 lei",
+          "price": "330 lei",
           "description": "întâlnirea · elaborarea planului"
         },
         {
@@ -208,8 +208,14 @@
         {
           "name": "Întâlnire de urmărire cu actualizarea planului",
           "duration": "30 min + actualizare",
-          "price": "200 lei",
+          "price": "250 lei",
           "description": "întâlnire de urmărire · eleborarea unui nou plan de maximum 14 zile adaptat nevoilor actuale"
+        },
+        {
+          "name": "Monitorizare lunară",
+          "duration": "30 minute",
+          "price": "130 lei",
+          "description": "pentru persoanele care au parcurs etapa inițială de colaborare · menținerea progresului · consolidarea obiceiurilor alimentare · dificultăți · fără elaborarea unui nou plan"
         }
       ]
     },
