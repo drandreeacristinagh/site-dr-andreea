@@ -454,6 +454,8 @@
   }
 
   // RESURSE
+  // Acceptă imagini, PDF-uri și linkuri externe,
+  // păstrând compatibilitatea cu resursele vechi.
   const resources = section(
     'resurse',
     data.resources_title
@@ -461,7 +463,7 @@
 
   if (resources) {
     const items = (data.resources || [])
-      .filter(x => x.published === true);
+      .filter(x => x && x.published === true);
 
     if (!items.length) {
       para(
@@ -472,31 +474,169 @@
     } else {
       const wrap = el('div', 'editable-cards');
 
+      // Stiluri aplicate exclusiv secțiunii Resurse.
+      wrap.style.display = 'grid';
+      wrap.style.gridTemplateColumns =
+        'repeat(auto-fit, minmax(min(100%, 280px), 1fr))';
+      wrap.style.gap = '24px';
+      wrap.style.alignItems = 'stretch';
+
+      const localAsset = value => {
+        if (typeof value !== 'string') return '';
+
+        const normalized = value.trim();
+
+        if (/^\/assets\/[^?#]+$/i.test(normalized)) {
+          return normalized;
+        }
+
+        if (/^assets\/[^?#]+$/i.test(normalized)) {
+          return '/' + normalized;
+        }
+
+        return '';
+      };
+
+      const safeLink = value => {
+        if (typeof value !== 'string') return '';
+
+        const normalized = value.trim();
+
+        if (/^https?:\/\/[^\s]+$/i.test(normalized)) {
+          return normalized;
+        }
+
+        if (/^\/(?!\/)[^\s]*$/.test(normalized)) {
+          return normalized;
+        }
+
+        return '';
+      };
+
       for (const x of items) {
         const card = el('article', 'editable-card');
 
-        heading(card, x.title);
+        card.style.display = 'flex';
+        card.style.flexDirection = 'column';
+        card.style.minWidth = '0';
+        card.style.overflow = 'hidden';
+
+        const imagePath = localAsset(x.image);
+        const filePath = localAsset(x.file);
+        const externalUrl = safeLink(x.url);
+
+        // Imagine de prezentare
+        if (imagePath) {
+          const imageLink = el('a');
+          imageLink.href = imagePath;
+          imageLink.target = '_blank';
+          imageLink.rel = 'noopener noreferrer';
+          imageLink.setAttribute(
+            'aria-label',
+            'Vezi imaginea: ' + (x.title || 'Resursă')
+          );
+
+          const img = el('img');
+
+          img.src = imagePath;
+          img.alt = x.title || 'Imagine resursă educațională';
+          img.loading = 'lazy';
+          img.decoding = 'async';
+
+          img.style.display = 'block';
+          img.style.width = '100%';
+          img.style.aspectRatio = '16 / 10';
+          img.style.objectFit = 'contain';
+          img.style.borderRadius = '6px';
+          img.style.marginBottom = '16px';
+
+          imageLink.append(img);
+          card.append(imageLink);
+        }
+
+        // Categoria resursei
+        if (x.category) {
+          para(card, x.category, 'muted');
+        }
+
+        // Titlu și descriere
+        if (x.title) {
+          heading(card, x.title);
+        }
+
         para(card, x.description);
 
+        // Zona cu linkuri și documente
+        const actions = el('div', 'resource-actions');
+
+        actions.style.display = 'flex';
+        actions.style.flexDirection = 'column';
+        actions.style.alignItems = 'flex-start';
+        actions.style.gap = '10px';
+        actions.style.marginTop = 'auto';
+        actions.style.paddingTop = '16px';
+
+        // PDF încărcat în Pages CMS
         if (
-          x.url &&
-          /^(https?:\/\/|\/)/.test(x.url)
+          filePath &&
+          /\.pdf$/i.test(filePath)
         ) {
-          const a = el(
+          const download = el(
+            'a',
+            'text-link',
+            'Descarcă PDF ↓'
+          );
+
+          download.href = filePath;
+          download.setAttribute('download', '');
+          download.setAttribute(
+            'aria-label',
+            'Descarcă PDF: ' + (x.title || 'Resursă')
+          );
+
+          actions.append(download);
+        }
+
+        // Link către sursă externă
+        if (externalUrl) {
+          const external = el(
             'a',
             'text-link',
             data.resource_open_text ||
-              'Deschide resursa ↗'
+              'Accesează resursa ↗'
           );
 
-          a.href = x.url;
-          a.rel = 'noopener noreferrer';
+          external.href = externalUrl;
+          external.rel = 'noopener noreferrer';
 
-          if (x.url.startsWith('http')) {
-            a.target = '_blank';
+          if (/^https?:\/\//i.test(externalUrl)) {
+            external.target = '_blank';
           }
 
-          card.append(a);
+          actions.append(external);
+        }
+
+        // Pentru imagini fără PDF sau link extern
+        if (
+          imagePath &&
+          !filePath &&
+          !externalUrl
+        ) {
+          const viewImage = el(
+            'a',
+            'text-link',
+            'Vezi imaginea ↗'
+          );
+
+          viewImage.href = imagePath;
+          viewImage.target = '_blank';
+          viewImage.rel = 'noopener noreferrer';
+
+          actions.append(viewImage);
+        }
+
+        if (actions.children.length) {
+          card.append(actions);
         }
 
         wrap.append(card);
