@@ -195,21 +195,21 @@
         },
         {
           "name": "Întâlnire individuală cu plan personalizat",
-          "duration": "50 min + plan",
-          "price": "300 lei",
-          "description": "Include întâlnirea și elaborarea ulterioară a planului."
+          "duration": "50 min + plan pe maximum 14 zile",
+          "price": "350 lei",
+          "description": "întâlnirea · elaborarea planului"
         },
         {
           "name": "Întâlnire de urmărire",
           "duration": "30 min",
           "price": "130 lei",
-          "description": "Revederea obiectivelor și clarificări."
+          "description": "analiza progresului · dificultăți întâmpinate · ajustări punctuale ale planului"
         },
         {
           "name": "Întâlnire de urmărire cu actualizarea planului",
           "duration": "30 min + actualizare",
           "price": "200 lei",
-          "description": "Include întâlnirea și actualizarea planului."
+          "description": "întâlnire de urmărire · eleborarea unui nou plan de maximum 14 zile adaptat nevoilor actuale"
         }
       ]
     },
