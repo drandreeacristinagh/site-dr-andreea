@@ -13,7 +13,7 @@ documents:
     description: acesta este pdf
 links:
   - title: cdc
-    url: www.cdc
+    url: https://www.cdc.gov/act-early/milestones/
 seo_description: info
 ---
 acesta este un test pentru resurse
