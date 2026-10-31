@@ -207,9 +207,9 @@
         },
         {
           "name": "Întâlnire de urmărire cu actualizarea planului",
-          "duration": "30 min + actualizare",
+          "duration": "30 min + actualizarea planului pe maximum 14 zile",
           "price": "250 lei",
-          "description": "întâlnire de urmărire · eleborarea unui nou plan de maximum 14 zile adaptat nevoilor actuale"
+          "description": "întâlnire de urmărire · eleborarea unui nou plan adaptat nevoilor actuale"
         },
         {
           "name": "Monitorizare lunară",
