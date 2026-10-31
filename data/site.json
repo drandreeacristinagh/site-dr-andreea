@@ -226,19 +226,13 @@
           "name": "Întâlnire individuală",
           "duration": "50 min",
           "price": "180 lei",
-          "description": "Activitate educațională, fără evaluare diagnostică."
+          "description": "discuție pornind de la întrebările și curiozitățile tale · informații clare și bazate pe dovezi științifice · explicații adaptate nevoilor și experiențelor personale · timp pentru întrebări și clarificări · fără evaluare clinică sau diagnostic"
         },
         {
           "name": "Întâlnire pentru părinți",
           "duration": "60 min",
-          "price": "200 lei",
-          "description": "Informații și orientare educațională."
-        },
-        {
-          "name": "Pachet 3 întâlniri individuale",
-          "duration": "3 × 50 min",
-          "price": "490 lei",
-          "description": "Trei întâlniri tematice."
+          "price": "220 lei",
+          "description": "discuție pornind de la întrebările și preocupările părinților · informații clare despre dezvoltarea, emoțiile și comportamentul copilului · explicații adaptate contextului familial · spațiu pentru întrebările ambilor părinți · fără evaluare clinică sau diagnostic"
         },
         {
           "name": "Ateliere și colaborări",
