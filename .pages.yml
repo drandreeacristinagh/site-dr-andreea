@@ -187,6 +187,7 @@ content:
     - name: published
       label: Publicat (true/false)
       type: boolean
+
   - name: resources_title
     label: Resurse – titlu
     type: string
@@ -199,17 +200,29 @@ content:
     list: true
     fields:
     - name: title
-      label: Titlu
+      label: Titlul resursei
+      type: string
+    - name: category
+      label: Categoria resursei
       type: string
     - name: description
       label: Descriere
       type: text
+    - name: image
+      label: Imagine sau infografic
+      type: image
+    - name: file
+      label: Document PDF – încarcă fișierul
+      type: file
+      options:
+        extensions: [pdf]
     - name: url
-      label: Link către resursă
+      label: Link extern către resursă (opțional)
       type: string
     - name: published
       label: Publicat (true/false)
       type: boolean
+
   - name: extra_sections
     label: Secțiuni suplimentare – titlu și text
     type: object
