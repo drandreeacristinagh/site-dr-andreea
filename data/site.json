@@ -254,13 +254,13 @@
       "name": "Pachet Start",
       "price": "900 lei",
       "comparison": "4 săptămâni · 4 întâlniri",
-      "description": "întâlnire inițială · elaborarea planului · 3 întâlniri de urmărire · suport constant"
+      "description": "întâlnire inițială · 3 întâlniri de urmărire · elaborarea și actualizarea planului săptămânal · suport constant"
     },
     {
       "name": "Pachet Follow-up",
       "price": "800 lei",
-      "comparison": "800 lei separat · Economie 150 lei",
-      "description": "Patru întâlniri de urmărire cu actualizări și clarificări prin mesaje în limitele convenite."
+      "comparison": "4 săptămâni · 4 întâlniri",
+      "description": "4 întâlniri de urmărire · actualizarea planului săptămânal · suport constant"
     }
   ],
   "process_steps": [
