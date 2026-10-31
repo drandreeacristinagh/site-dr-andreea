@@ -730,3 +730,81 @@ content:
   - name: seo_description
     label: Descriere SEO
     type: text
+
+# NOU: PAGINI INDIVIDUALE PENTRU RESURSE
+- name: resurse_individuale
+  label: Resurse – pagini individuale
+  type: collection
+  path: content/resurse
+  format: yaml-frontmatter
+  filename: "{primary}.md"
+  view:
+    fields: [title, date, category, published]
+    primary: title
+    sort: date
+    order: desc
+  fields:
+  - name: title
+    label: Titlul resursei
+    type: string
+    required: true
+  - name: summary
+    label: Descriere scurtă
+    type: text
+    required: true
+  - name: category
+    label: Categoria resursei
+    type: string
+  - name: date
+    label: Data publicării
+    type: date
+  - name: source
+    label: Autor sau sursă
+    type: string
+  - name: image
+    label: Imagine de copertă
+    type: image
+  - name: image_alt
+    label: Descrierea imaginii de copertă
+    type: string
+  - name: published
+    label: Publicat
+    type: boolean
+    default: false
+  - name: body
+    label: Descriere detaliată și instrucțiuni
+    type: rich-text
+    options:
+      format: markdown
+      switcher: true
+      rename: true
+  - name: documents
+    label: Documente PDF – adaugă oricâte
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Titlul documentului
+      type: string
+    - name: file
+      label: Încarcă documentul PDF
+      type: file
+      options:
+        extensions: [pdf]
+    - name: description
+      label: Descriere opțională
+      type: text
+  - name: links
+    label: Linkuri către surse și materiale externe
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Textul linkului
+      type: string
+    - name: url
+      label: Adresa web
+      type: string
+  - name: seo_description
+    label: Descriere SEO
+    type: text
