@@ -196,19 +196,19 @@
         {
           "name": "Întâlnire individuală cu plan personalizat",
           "duration": "50 min + plan pe maximum 14 zile",
-          "price": "330 lei",
+          "price": "350 lei",
           "description": "întâlnirea · elaborarea planului"
         },
         {
           "name": "Întâlnire de urmărire",
           "duration": "30 min",
-          "price": "130 lei",
+          "price": "150 lei",
           "description": "analiza progresului · dificultăți întâmpinate · ajustări punctuale ale planului"
         },
         {
           "name": "Întâlnire de urmărire cu actualizarea planului",
           "duration": "30 min + actualizarea planului pe maximum 14 zile",
-          "price": "250 lei",
+          "price": "300 lei",
           "description": "întâlnire de urmărire · eleborarea unui nou plan adaptat nevoilor actuale"
         },
         {
@@ -251,14 +251,14 @@
   ],
   "packages": [
     {
-      "name": "Pachet de început",
-      "price": "750 lei",
-      "comparison": "900 lei separat · Economie 150 lei",
-      "description": "O întâlnire inițială cu plan personalizat, trei întâlniri de urmărire cu actualizări și clarificări prin mesaje în limitele convenite."
+      "name": "Pachet Start",
+      "price": "900 lei",
+      "comparison": "4 săptămâni · 4 întâlniri",
+      "description": "întâlnire inițială · elaborarea planului · 3 întâlniri de urmărire · suport constant"
     },
     {
-      "name": "Pachet de continuitate",
-      "price": "650 lei",
+      "name": "Pachet Follow-up",
+      "price": "800 lei",
       "comparison": "800 lei separat · Economie 150 lei",
       "description": "Patru întâlniri de urmărire cu actualizări și clarificări prin mesaje în limitele convenite."
     }
