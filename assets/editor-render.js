@@ -282,8 +282,7 @@
   }
 
   // ARTICOLE
-  // Articolele noi sunt preluate din lista generată automat
-  // la publicarea site-ului: data/articles.json.
+  // Preluate din data/articles.json, generat la publicare.
   const articles = section(
     'articole',
     data.articles_title
@@ -315,7 +314,6 @@
     }
 
     if (manifestAvailable) {
-      // NOUL SISTEM: PAGINI INDIVIDUALE
       const published = items.filter(x =>
         typeof x.title === 'string' &&
         typeof x.url === 'string' &&
@@ -402,8 +400,7 @@
         articles.append(wrap);
       }
     } else {
-      // SISTEMUL VECHI:
-      // Este păstrat temporar până la activarea build-ului.
+      // Compatibilitate cu sistemul vechi de articole.
       const oldItems = (data.articles || [])
         .filter(x => x.published === true);
 
@@ -454,195 +451,214 @@
   }
 
   // RESURSE
-  // Acceptă imagini, PDF-uri și linkuri externe,
-  // păstrând compatibilitatea cu resursele vechi.
+  // Sistem nou: pagini individuale, identic cu Articole.
+  // Fișier generat automat: data/resources.json.
   const resources = section(
     'resurse',
     data.resources_title
   );
 
   if (resources) {
-    const items = (data.resources || [])
-      .filter(x => x && x.published === true);
+    let items = [];
+    let manifestAvailable = false;
 
-    if (!items.length) {
-      para(
-        resources,
-        data.resources_empty,
-        'muted'
+    try {
+      const response = await fetch(
+        'data/resources.json',
+        { cache: 'no-store' }
       );
-    } else {
-      const wrap = el('div', 'editable-cards');
 
-      // Stiluri aplicate exclusiv secțiunii Resurse.
-      wrap.style.display = 'grid';
-      wrap.style.gridTemplateColumns =
-        'repeat(auto-fit, minmax(min(100%, 280px), 1fr))';
-      wrap.style.gap = '24px';
-      wrap.style.alignItems = 'stretch';
+      if (response.ok) {
+        const result = await response.json();
 
-      const localAsset = value => {
-        if (typeof value !== 'string') return '';
-
-        const normalized = value.trim();
-
-        if (/^\/assets\/[^?#]+$/i.test(normalized)) {
-          return normalized;
+        if (Array.isArray(result)) {
+          items = result;
+          manifestAvailable = true;
         }
+      }
+    } catch (error) {
+      console.warn(
+        'Lista resurselor individuale nu este disponibilă.',
+        error
+      );
+    }
 
-        if (/^assets\/[^?#]+$/i.test(normalized)) {
-          return '/' + normalized;
-        }
+    if (manifestAvailable) {
+      const published = items.filter(x =>
+        typeof x.title === 'string' &&
+        typeof x.url === 'string' &&
+        /^\/resurse\/[a-z0-9-]+\/$/.test(x.url)
+      );
 
-        return '';
-      };
+      if (!published.length) {
+        para(
+          resources,
+          data.resources_empty ||
+            'Resursele vor fi disponibile în curând.',
+          'muted'
+        );
+      } else {
+        const wrap = el('div', 'editable-cards');
 
-      const safeLink = value => {
-        if (typeof value !== 'string') return '';
+        for (const x of published) {
+          const card = el('article', 'editable-card');
 
-        const normalized = value.trim();
+          // Imaginea de copertă
+          if (
+            x.image &&
+            /^(\/assets\/|assets\/)/.test(x.image)
+          ) {
+            const imageLink = el('a');
 
-        if (/^https?:\/\/[^\s]+$/i.test(normalized)) {
-          return normalized;
-        }
+            imageLink.href = x.url;
 
-        if (/^\/(?!\/)[^\s]*$/.test(normalized)) {
-          return normalized;
-        }
+            const img = el('img');
 
-        return '';
-      };
+            img.src = x.image;
+            img.alt = x.image_alt || x.title;
+            img.loading = 'lazy';
+            img.decoding = 'async';
 
-      for (const x of items) {
-        const card = el('article', 'editable-card');
-
-        card.style.display = 'flex';
-        card.style.flexDirection = 'column';
-        card.style.minWidth = '0';
-        card.style.overflow = 'hidden';
-
-        const imagePath = localAsset(x.image);
-        const filePath = localAsset(x.file);
-        const externalUrl = safeLink(x.url);
-
-        // Imagine de prezentare
-        if (imagePath) {
-          const imageLink = el('a');
-          imageLink.href = imagePath;
-          imageLink.target = '_blank';
-          imageLink.rel = 'noopener noreferrer';
-          imageLink.setAttribute(
-            'aria-label',
-            'Vezi imaginea: ' + (x.title || 'Resursă')
-          );
-
-          const img = el('img');
-
-          img.src = imagePath;
-          img.alt = x.title || 'Imagine resursă educațională';
-          img.loading = 'lazy';
-          img.decoding = 'async';
-
-          img.style.display = 'block';
-          img.style.width = '100%';
-          img.style.aspectRatio = '16 / 10';
-          img.style.objectFit = 'contain';
-          img.style.borderRadius = '6px';
-          img.style.marginBottom = '16px';
-
-          imageLink.append(img);
-          card.append(imageLink);
-        }
-
-        // Categoria resursei
-        if (x.category) {
-          para(card, x.category, 'muted');
-        }
-
-        // Titlu și descriere
-        if (x.title) {
-          heading(card, x.title);
-        }
-
-        para(card, x.description);
-
-        // Zona cu linkuri și documente
-        const actions = el('div', 'resource-actions');
-
-        actions.style.display = 'flex';
-        actions.style.flexDirection = 'column';
-        actions.style.alignItems = 'flex-start';
-        actions.style.gap = '10px';
-        actions.style.marginTop = 'auto';
-        actions.style.paddingTop = '16px';
-
-        // PDF încărcat în Pages CMS
-        if (
-          filePath &&
-          /\.pdf$/i.test(filePath)
-        ) {
-          const download = el(
-            'a',
-            'text-link',
-            'Descarcă PDF ↓'
-          );
-
-          download.href = filePath;
-          download.setAttribute('download', '');
-          download.setAttribute(
-            'aria-label',
-            'Descarcă PDF: ' + (x.title || 'Resursă')
-          );
-
-          actions.append(download);
-        }
-
-        // Link către sursă externă
-        if (externalUrl) {
-          const external = el(
-            'a',
-            'text-link',
-            data.resource_open_text ||
-              'Accesează resursa ↗'
-          );
-
-          external.href = externalUrl;
-          external.rel = 'noopener noreferrer';
-
-          if (/^https?:\/\//i.test(externalUrl)) {
-            external.target = '_blank';
+            imageLink.append(img);
+            card.append(imageLink);
           }
 
-          actions.append(external);
-        }
+          // Categoria
+          if (x.category) {
+            para(card, x.category, 'muted');
+          }
 
-        // Pentru imagini fără PDF sau link extern
-        if (
-          imagePath &&
-          !filePath &&
-          !externalUrl
-        ) {
-          const viewImage = el(
+          // Titlu cu link către pagina resursei
+          const title = el('h3', 'editable-subtitle');
+          const titleLink = el('a', '', x.title);
+
+          titleLink.href = x.url;
+          titleLink.style.color = 'inherit';
+          titleLink.style.textDecoration = 'none';
+
+          title.append(titleLink);
+          card.append(title);
+
+          // Data publicării
+          if (x.date) {
+            const date = new Date(x.date);
+
+            if (!Number.isNaN(date.getTime())) {
+              para(
+                card,
+                new Intl.DateTimeFormat('ro-RO', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                  timeZone: 'UTC'
+                }).format(date),
+                'muted'
+              );
+            }
+          }
+
+          // Descriere scurtă
+          para(card, x.summary);
+
+          // Accesarea paginii individuale
+          const openResource = el(
             'a',
             'text-link',
-            'Vezi imaginea ↗'
+            'Vezi resursa →'
           );
 
-          viewImage.href = imagePath;
-          viewImage.target = '_blank';
-          viewImage.rel = 'noopener noreferrer';
+          openResource.href = x.url;
 
-          actions.append(viewImage);
+          card.append(openResource);
+          wrap.append(card);
         }
 
-        if (actions.children.length) {
-          card.append(actions);
-        }
-
-        wrap.append(card);
+        resources.append(wrap);
       }
+    } else {
+      // Compatibilitate cu resursele din vechiul editor.
+      const oldItems = (data.resources || [])
+        .filter(x => x.published === true);
 
-      resources.append(wrap);
+      if (!oldItems.length) {
+        para(
+          resources,
+          data.resources_empty ||
+            'Resursele vor fi disponibile în curând.',
+          'muted'
+        );
+      } else {
+        const wrap = el('div', 'editable-cards');
+
+        for (const x of oldItems) {
+          const card = el('article', 'editable-card');
+
+          if (
+            x.image &&
+            /^(\/assets\/|assets\/)/.test(x.image)
+          ) {
+            const img = el('img');
+
+            img.src = x.image;
+            img.alt = x.title || '';
+            img.loading = 'lazy';
+
+            card.append(img);
+          }
+
+          if (x.category) {
+            para(card, x.category, 'muted');
+          }
+
+          if (x.title) {
+            heading(card, x.title);
+          }
+
+          para(card, x.description);
+
+          if (
+            x.file &&
+            /^(\/assets\/|assets\/)/.test(x.file) &&
+            /\.pdf$/i.test(x.file)
+          ) {
+            const download = el(
+              'a',
+              'text-link',
+              'Descarcă PDF ↓'
+            );
+
+            download.href = x.file;
+            download.setAttribute('download', '');
+
+            card.append(download);
+          }
+
+          if (
+            x.url &&
+            /^(https?:\/\/|\/(?!\/))/.test(x.url)
+          ) {
+            const link = el(
+              'a',
+              'text-link',
+              data.resource_open_text ||
+                'Accesează resursa ↗'
+            );
+
+            link.href = x.url;
+            link.rel = 'noopener noreferrer';
+
+            if (/^https?:\/\//.test(x.url)) {
+              link.target = '_blank';
+            }
+
+            card.append(link);
+          }
+
+          wrap.append(card);
+        }
+
+        resources.append(wrap);
+      }
     }
   }
 
