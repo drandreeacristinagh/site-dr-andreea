@@ -5,7 +5,7 @@
   "private": true,
   "description": "Site profesional Dr. Andreea-Cristina Gheorghe",
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js && node scripts/prerender-home.js"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
