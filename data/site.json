@@ -101,31 +101,31 @@
   "offer_intro": "Educație bazată pe dovezi științifice și adaptată nevoilor fiecărei persoane.",
   "nutrition_title": "Educație nutrițională 1:1",
   "nutrition_intro": "Ofer întâlniri individuale în mediul online de educație nutrițională, în care pornim de la nevoile, preferințele și obiectivele tale, dar și de la ritmul și stilul tău de viață.\n\nCred că o relație sănătoasă cu alimentația se construiește prin înțelegere, nu prin reguli stricte. De aceea, îmi doresc să găsim împreună soluții practice, flexibile și potrivite pentru tine, ținând cont și de legătura dintre alimentație, emoții și starea de bine.",
-  "nutrition_areas_title": "Câteva dintre ariile mele de interes",
+  "nutrition_areas_title": "Cu ce mă ocup",
   "nutrition_areas": [
     {
       "title": "Managementul greutății corporale",
-      "description": "Scădere sau creștere ponderală, prin strategii sustenabile și adaptate individual."
+      "description": "Scădere, creștere sau menținere în greutate, prin obiceiuri alimentare adaptate nevoilor, preferințelor și stilului tău de viață."
     },
     {
-      "title": "Tulburări endocrine și metabolice",
-      "description": "Educație nutrițională în contexte precum rezistența la insulină, tiroidita Hashimoto și sindromul ovarelor polichistice/sindromul ovarian metabolic endocrin (PCOS/PMOS)."
+      "title": "Nutriție în afecțiuni endocrine și metabolice",
+      "description": "Adaptarea alimentației în contexte precum rezistența la insulină, sindromul ovarelor polichistice/sindromul ovarian metabolic endocrin (PCOS/PMOS) sau tiroidita Hashimoto."
     },
     {
       "title": "Nutriție și sănătate mintală",
-      "description": "Sprijin pentru organizarea alimentației în contextul particularităților de neurodezvoltare, al tulburărilor afective și al dificultăților asociate."
+      "description": "Alimentația în contextul ADHD, autismului, tulburărilor afective și al altor dificultăți care pot influența obiceiurile alimentare."
     },
     {
       "title": "Selectivitate și evitare alimentară",
-      "description": "Dificultăți legate de varietatea alimentară, sensibilități senzoriale și comportamente de evitare."
+      "description": "Dificultăți în acceptarea alimentelor, sensibilități senzoriale, varietate alimentară redusă și comportamente de evitare."
     },
     {
       "title": "Relația cu alimentația, corpul și emoțiile",
-      "description": "Sprijin pentru dezvoltarea unei relații mai flexibile cu mâncarea, reducerea rigidității alimentare și înțelegerea influenței emoțiilor asupra comportamentului alimentar."
+      "description": "Mâncat emoțional, reguli alimentare rigide, preocupări legate de imaginea corporală și construirea unor obiceiuri mai flexibile."
     },
     {
       "title": "Tulburări de comportament alimentar",
-      "description": "Sprijin nutrițional în colaborare cu profesioniștii implicați în evaluare și tratament."
+      "description": "Educație și sprijin nutrițional, în colaborare cu echipa medicală implicată în evaluare și tratament."
     }
   ],
   "nutrition_disclaimer": "Ședințele au caracter educațional și nu înlocuiesc evaluarea medicală și tratamentul atunci când acestea sunt indicate.",
