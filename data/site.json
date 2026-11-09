@@ -121,7 +121,7 @@
     },
     {
       "title": "Nutriție și sănătate mintală",
-      "description": "Alimentația în contextul ADHD, autismului, tulburărilor afective și al altor dificultăți care pot influența obiceiurile alimentare."
+      "description": "Alimentația în contextul ADHD, TSA, tulburărilor afective și al altor dificultăți care pot influența obiceiurile alimentare."
     },
     {
       "title": "Selectivitate și evitare alimentară",
@@ -146,12 +146,15 @@
   "psycho_topics": [
     "Dezvoltarea copilului și adolescentului",
     "ADHD",
-    "Autism",
+    "Tulburare de spectru autist",
+    "Tulburări de comportament alimentar",
     "Emoții și reglare emoțională",
     "Anxietate",
-    "Tulburări afective",
+    "Depresie și alte tulburări afective",
+    "Ticuri și sindrom Tourette",
+    "Personalitate",
+    "Despre psihoterapie",
     "Sprijin parental",
-    "Sănătate mintală la copii și adolescenți",
     "Prevenție"
   ],
   "psycho_disclaimer": "Activitățile au caracter educațional și nu constituie consultații psihiatrice, evaluare diagnostică sau tratament.",
