@@ -73,16 +73,28 @@
   "focus_empty": "Domeniile de interes vor fi disponibile în curând.",
   "focus_items": [
     {
-      "title": "Sănătate mintală",
-      "description": "Informații despre sănătatea mintală, emoții și comportament."
-    },
-    {
-      "title": "Dezvoltarea copilului și adolescentului",
-      "description": "Neurodezvoltare și particularități ale etapelor de dezvoltare."
-    },
-    {
       "title": "Nutriție și comportament alimentar",
-      "description": "Relația dintre alimentație, corp, emoții și sănătate."
+      "description": "Selectivitate alimentară, tulburări de comportament alimentar, imagine corporală și legătura dintre alimentație, emoții și sănătatea mintală."
+    },
+    {
+      "title": "Sănătatea mintală a copilului și adolescentului",
+      "description": "Anxietate, depresie, dificultăți emoționale și comportamentale, reglarea emoțiilor și comportamentele de risc în copilărie și adolescență."
+    },
+    {
+      "title": "Tulburări de neurodezvoltare",
+      "description": "Autism, ADHD și alte tulburări de neurodezvoltare, cu accent pe particularitățile fiecărei persoane și pe impactul acestora în viața de zi cu zi."
+    },
+    {
+      "title": "Dezvoltarea personalității",
+      "description": "Formarea identității, dezvoltarea personalității, relațiile cu ceilalți și provocările emoționale și relaționale."
+    },
+    {
+      "title": "Genetică și psihiatrie",
+      "description": "Rolul factorilor genetici în neurodezvoltare, legăturile dintre diferite tulburări, posibilitățile și limitele farmacogeneticii."
+    },
+    {
+      "title": "Psihoterapii bazate pe dovezi",
+      "description": "Diferite abordări psihoterapeutice, principiile pe care se bazează, dificultățile pentru care sunt recomandate și ce spun cercetările despre eficiența lor."
     }
   ],
   "offer_title": "Ce ofer",
